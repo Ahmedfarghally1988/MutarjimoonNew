@@ -3135,8 +3135,8 @@
         border-radius: 0;
     }
     .hero_content h1 {
-        font-size: 25px;
-        line-height: 38px;
+        font-size: 41px;
+        line-height: 48px;
     }
     .hero_content p {
         width: 100%;
@@ -3187,7 +3187,13 @@
     /* ====Section Title ====== */
     .section_title h4 {
         font-size: 12px;
+        margin: 25px 0 5px 0;
     }
+
+    .section_title h3{
+        margin: 0;
+    }
+
     .section_title h2{
         font-size: 22px;
     }
@@ -3283,7 +3289,20 @@
     }
     .about_button {
         display: flex;
+        justify-content: space-between;
     }
+    .about_btn.style_two{
+        margin: 0 0 15px 0 !important;
+    }
+    .section_title.text-center {
+        margin-bottom: 15px;
+        width: 100% !important;
+    }
+
+    .service_single_item.style_two:hover .service_btn a {
+        color: #0e4747;
+    }
+
     .boxed {
         width: calc(100% - 25px);
         margin: 12px;
@@ -3306,7 +3325,7 @@
         padding: 85px 0 92px;
     }
     .section_title.text-center p {
-        width: 100%;
+        width: 100% !important;
         font-size: 12px;
     }
     .steps-single-item {
@@ -3322,6 +3341,7 @@
     .section_title p {
         width: 100%;
         font-size: 14px;
+        margin: 10px 0 20px !important;
     }
     /* ====Pricing Area ==== */
     section.pricing-area {
@@ -3449,7 +3469,10 @@ section.case-study-area {
         display: block;
     }
     section.about_area.style_four {
-        padding: 40px 0 85px;
+        padding: 40px 0 30px;
+    }
+    section.counter_area {
+        padding: 30px 0 10px;
     }
     .about_details {
         margin-top: -5px;
@@ -3570,7 +3593,9 @@ section.case-study-area {
         font-size: 25px;
     }
     .call-do-action-info {
-        display: block;
+        display: flex;
+        margin: 0 !important;
+        padding: 0 !important;
     }
     .call-do-social_icon {
         margin: 20px 0 20px;
@@ -3622,9 +3647,12 @@ section.case-study-area {
         font-size: 14px;
     }
     .about_play.style_three  a.banner-play-btn {
-        width: 150px;
-        height: 150px;
-        line-height: 138px !important;
+        width: 110px;
+        height: 110px;
+        line-height: 98px !important;
+    }
+    .marquee-block h3 {
+        margin: 0 10px;
     }
     .powerful_box {
         right: 13%;
@@ -3633,8 +3661,7 @@ section.case-study-area {
         margin-left: 0;
     }
     .about_play.style_three {
-
-        right: 8%;
+        right: 0 !important;
     }
     .about_shape.style_five {
         right: 3%;
@@ -3717,7 +3744,7 @@ section.case-study-area {
         display: none;
     }
     .team_area.style_two {
-        padding: 85px 0 70px;
+        padding: 25px 0 0;
     }
     .testi_shape_four {
         top: 12%;
@@ -3752,10 +3779,10 @@ section.case-study-area {
         display: none;
     }
     section.blog_area.style_two {
-        padding: 85px 0 70px;
+        padding: 0;
     }
     section.call_area {
-        padding: 79px 0 100px;
+        padding: 20px 0 15px;
     }
     section.testimonial_area.style_three {
         padding: 0px 0 145px;
@@ -3764,9 +3791,23 @@ section.case-study-area {
         padding: 100px 0 200px;
     }
     section.footer_area.style_three {
-        padding: 85px 0 30px;
+        padding: 15px 0 10px;
     }
 
+    .row.add-border {
+        padding-top: 10px;
+    }
+    .row.add-border.style_two {
+        margin-top: 0 !important;
+    }
+
+    .order-one{
+        order: 1;
+    }
+    .footer_shape_one {
+        right: 3%;
+        left: auto;
+    }
          /* ====== Start Home Four   Csss ======= */
 
          .hero_content.style_four h1 {
@@ -4189,14 +4230,19 @@ section.case-study-area {
         left: 31%;
     }
     section.contact_area.inner_section {
-        padding: 90px 0 100px;
+        padding: 0;
     }
     .contact_main_info {
-        padding: 40px 20px 42px;
-        margin-bottom: 30px;
+        padding: 10px 20px 20px;
+        margin-bottom: 0;
     }
+
+    .section_title{
+        text-align: center;
+    }
+
     .inner_section .contact-form-box.style_two {
-        padding: 64px 20px 70px;
+        padding: 20px 20px 20px;
     }
     .footer-bottom-menu {
         text-align: left;
