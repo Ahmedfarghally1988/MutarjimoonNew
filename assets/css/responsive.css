@@ -2348,6 +2348,8 @@
 /* small mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 599px) {
 
+
+
     .advisar-header-area {
         display: none;
     }
@@ -3300,7 +3302,7 @@
     }
 
     .service_single_item.style_two:hover .service_btn a {
-        color: #0e4747;
+        color: #92ffc0;
     }
 
     .boxed {
@@ -3479,6 +3481,7 @@ section.case-study-area {
     }
     .about_details a {
         font-size: 14px;
+        margin: -20px 0 0 0;
     }
     .about_btn.style_three a {
         font-size: 14px;
@@ -3852,6 +3855,9 @@ section.case-study-area {
         }
         .about_counter {
             padding: 60px 0 60px;
+        }
+        .service_single_item.style_two .service_content h3 a {
+            font-size: 14px;
         }
         .service_single_item.style_four {
             margin-bottom: 30px;

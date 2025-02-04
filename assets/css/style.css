@@ -96,6 +96,8 @@ a.active_sticky {
     visibility: inherit !important;
     color: #000 !important;
     font-size: 16px;
+    font-family: "RB Nylo Test Medium";
+      
 }
 .header-menu ul .sub_menu li:hover>a {
     background: transparent;
@@ -253,7 +255,7 @@ a.slider_butn_active {
     display: inline-block;
     transform: rotate(-45deg);
     font-size: 15px;
-    font-weight: 600;
+      
     transition: .5s;
 }
 .hero_btn.style_two a:hover i {
@@ -347,7 +349,7 @@ section.brand_area.style_two {
     font-size: 21px;
     line-height: 28px;
     color: #063232;
-    font-weight: 600;
+    font-weight: 500;
     margin: 20px 0 0 0;
 }
 .section_title.style_two h1 {
@@ -384,6 +386,7 @@ section.brand_area.style_two {
 }
 .section_title.style_three p {
     margin: 23px 0 25px;
+
 }
 .section_title.style_four {
     margin-bottom: 30px !important;
@@ -562,7 +565,7 @@ section.service_area.boxed {
 .service_btn a i {
     margin-left: -8px;
     font-size: 15px;
-    font-weight: 600;
+      
     color: #fff;
 }
 /* all hover */
@@ -829,7 +832,7 @@ left: 50%;
     overflow: hidden;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 600;
+      
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -929,7 +932,7 @@ section.about_area.style_four .about_play.style_three  a.banner-play-btn {
     overflow: hidden;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 600;
+      
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -1148,15 +1151,15 @@ section.counter_area {
     display: inline-block;
     font-size: 60px;
     line-height: 52px;
-    color: #e0f1df;
-    font-weight: 600;
+    color: #92ffc0;
+      
 }
 .counter-_number span {
     display: inline-block;
     font-size: 60px;
     line-height: 52px;
     color: #e0f1df;
-    font-weight: 600;
+      
 }
 .counter_title {
     margin-left: 40px;
@@ -1188,7 +1191,7 @@ section.counter_area {
     overflow: hidden;
     color: #ffffff;
     font-size: 16px;
-    font-weight: 600;
+      
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
@@ -1412,7 +1415,7 @@ section.pricing-area .section_title p {
 .pricing-item-text span.tk {
     font-size: 46px;
     color: #faab43;
-    font-weight: 600;
+      
     margin-left: 20px;
 }
 .pricing-item-text span.currency {
@@ -1950,7 +1953,7 @@ section.team_area.inner_page {
 .blog_btn a i {
     margin-left: -8px;
     font-size: 15px;
-    font-weight: 600;
+      
     color: #0a4b4b;
 }
 /* all hover */
@@ -2000,7 +2003,7 @@ p.footer_desc {
     font-size: 15px;
     line-height: 24px;
     color: #a3b7b7;
-    font-weight: 400;
+      
     margin: 37px 0 15px;
     width: 100%;
 }
@@ -2052,7 +2055,7 @@ button.btn:hover {
 .footer-widget-menu ul li a {
     font-size: 17px;
     color: #a3b7b7;
-    font-weight: 400;
+      
     display: inline-block;
     margin-left: -15px;
     margin-bottom: 9px;
@@ -2128,7 +2131,7 @@ button.btn:hover {
     font-size: 15px;
     line-height: 28px;
     color: #ffffff;
-    font-weight: 400;
+      
     margin: 0;
 }
 .footer-bottom-content.right {
@@ -2145,7 +2148,7 @@ button.btn:hover {
     display: inline-block;
     font-size: 15px;
     color: #bdd3d3;
-    font-weight: 400;
+      
 }
 .footer-bottom-menu ul li a:hover {
     color: #fff;
@@ -2268,7 +2271,7 @@ section.feature_area.style_sixs {
     color: #063232;
     margin-bottom: 6px;
     margin-top: 40px;
-    font-weight: 600;
+      
 }
 .feature_item.style_sixs .feature_icon {
     width: 80px;
@@ -2670,7 +2673,7 @@ section.about_area.style_two {
     color: #fff;
 }
 .service_single_item.style_two:hover .service_btn a {
-    color: #fff;
+    color: #000;
 }
 .service_single_item.style_two .service_btn a i {
     color: #0a4b4b;
@@ -2761,22 +2764,12 @@ section.service_area.style_four {
 }
 
 .service_single_item.style_four:hover {
-    background: #0e4747;
+    background: #92ffc0;
 }
 
 .service_single_item.style_four:hover .service_content h3 a ,
 .service_single_item.style_four:hover .service_btn a i{
-    color: #fff !important;
-}
-.service_single_item.style_four .icon-img-hover{
-    display: none;
-}
 
-.service_single_item.style_four:hover .icon-img{
-    display: none;
-}
-.service_single_item.style_four:hover .icon-img-hover{
-    display: block;
 }
 
 .service_single_item.style_four .service_thumb img {
@@ -2968,14 +2961,13 @@ section.call_area {
 }
 
 .call_info p {
-    opacity: 0.702;
-    font-size: 15px;
+    font-size: 17px;
     color: #ffffff;
-    font-weight: 500;
+      
     margin: 0;
 }
 .call_info h3 {
-    font-size: 20px;
+    font-size: 17px;
     color: #ffffff;
     font-weight: 500;
     margin: 7px 0 0;
@@ -3375,7 +3367,7 @@ section.call_area.style_two {
 section.call_area.style_two .call-do-content h2 {
     font-size: 42px;
     color: #ffffff;
-    font-weight: 600;
+      
 }
 .call-do-content p {
     color: #a3b7b7;
@@ -3659,7 +3651,7 @@ section.hero_area {
 }
 .hero_content h1 {
     font-size: 56px;
-    font-weight: 600;
+      
     line-height: 70px;
     position: relative;
     color: #fff;
@@ -3809,12 +3801,14 @@ section.hero_area {
 }
 .about_details a {
     font-size: 17px;
-    font-weight: 600;
+      
     fill: #063232;
     color: #063232;
+    margin: -7px 0 0 0;
+    display: block;
 }
 .about_details a i {
-    font-weight: 600;
+      
     font-size: 15px;
     margin-left: 8px;
 }
@@ -4814,7 +4808,7 @@ section.footer_area.style_three {
     padding: 30px 0 30px;
 }
 .footer-widget-content.style_two p.footer_desc {
-    color: #6b7a7a;
+    color: #063232;
 }
 .footer-widget-content.style_two .subscribe_form input {
     border-bottom: 1px solid rgba(6,50,50,0.30196078431372547);
@@ -4937,7 +4931,7 @@ section.footer_area.style_three {
     padding-bottom: 20px;
     font-size: 48px;
     color: #ffffff;
-    font-weight: 600;
+      
     position: relative;
     z-index: 1;
     display: inline-block;
@@ -5232,7 +5226,7 @@ a.active {
 .prot-text h3 a {
     font-size: 34px;
     color: #063232;
-    font-weight: 600;
+      
     display: inline-block;
 }
 .prot-text span {
@@ -5292,7 +5286,7 @@ section.portfolio_details {
 .port_details_content h2 {
     font-size: 42px;
     color: #063232;
-    font-weight: 600;
+      
 }
 p.quote {
     margin: 20px 153px 25px 0;
@@ -5617,7 +5611,8 @@ section.contact_area.inner_section {
 .contact_main_info .call_info h3 {
     color: #063232;
     font-weight: 500;
-    margin: 7px 0 0;
+    margin: 5px 0 0;
+    font-size: 16px;
 }
 .contact_main_info .call_info span {
     color: #063232;
@@ -5633,7 +5628,7 @@ section.contact_area.inner_section {
     margin: 28px 0 40px;
 }
 .inner_section .contact_shape2 {
-    right: 12%;
+    right: 2%;
     bottom: 3%;
 }
 
@@ -5698,7 +5693,7 @@ section.contact_area.inner_section {
 .service_details_content h2 {
     font-size: 42px;
     color: #063232;
-    font-weight: 600;
+      
 }
 p.details_decs1 {
     margin: 18px 23px 25px 0;
@@ -5801,7 +5796,7 @@ h2.error-title {
     display: inline-block;
     font-size: 40px;
     color: #063232;
-    font-weight: 600;
+      
 }
 
 h1.error-text {
@@ -6380,7 +6375,7 @@ to {
 .content-box h2 {
     color: #fff;
     font-size: 26px;
-    font-weight: 600;
+      
 }
 
 .content-box p {
@@ -6402,7 +6397,7 @@ a.theme-btn.btn-style-two i {
     color: #fff;
     font-size: 26px;
     margin-bottom: 15px;
-    font-weight: 600;
+      
 }
 
 ul.list-style-one li {
@@ -6419,7 +6414,7 @@ ul.list-style-one li i {
 
 ul.list-style-one li span {
     font-size: 20px;
-    font-weight: 600;
+      
     color: #006666;
     margin: 0 10px 0 0px;
 }
@@ -6752,6 +6747,7 @@ button.close-search i {
     border-radius: 0 !important;
     padding: 15px;
     position: relative;
+    font-family: "RB Nylo Test Medium";
 }
 
 .nav-tabs-menu li button.active:before{
@@ -6794,6 +6790,7 @@ button.close-search i {
 }
 .list_about li{
     list-style-type: disc;
+    font-family: "RB Nylo Test Medium";
 }
 .mc4wp-form-fields {
     position: relative;
@@ -6867,10 +6864,10 @@ button.close-search i {
     position: absolute;
     content: "";
     left: 0px;
-    bottom: 8px;
+    bottom: -4px;
     width: 100%;
     height: 10px;
-    background: #076763;
+    background: #92ffc0;
     z-index: -1;
     animation: bg-anim 5s linear infinite;
 }

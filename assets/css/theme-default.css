@@ -19,7 +19,7 @@ body {
     color: #6b7a7a;
     font-weight: 400;
     text-align: left;
-    font-family: "RB Nylo Test ExtraLight";
+    font-family: "RB Nylo Test Medium";
 }
 
 p {
@@ -27,7 +27,7 @@ p {
     line-height: 26px;
     color: #000;
     font-weight: 400;
-    font-family: "RB Nylo Test ExtraLight";
+    font-family: "RB Nylo Test Medium";
     transition: 0.5s;
 }
 
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #063232;
+    color: #112a46;
     font-family: "RB Nylo Test Medium";
     font-style: normal;
     margin-bottom: 0;
