@@ -3290,8 +3290,8 @@
         font-size: 15px;
     }
     .about_button {
-        display: flex;
-        justify-content: space-between;
+        display: block;
+        text-align: center;
     }
     .about_btn.style_two{
         margin: 0 0 15px 0 !important;
@@ -3481,7 +3481,7 @@ section.case-study-area {
     }
     .about_details a {
         font-size: 14px;
-        margin: -20px 0 0 0;
+        margin: 0 0 15px 0;
     }
     .about_btn.style_three a {
         font-size: 14px;
@@ -4244,7 +4244,7 @@ section.case-study-area {
     }
 
     .section_title{
-        text-align: center;
+
     }
 
     .inner_section .contact-form-box.style_two {

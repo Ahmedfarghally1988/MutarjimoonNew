@@ -331,7 +331,7 @@ $(function() {
     $('.brand_list').owlCarousel({
         loop: true,
         autoplay: true,
-        autoplayTimeout: 10000,
+        autoplayTimeout: 1000,
         dots: false,
         margin: 30,
         nav: false,

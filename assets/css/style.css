@@ -38,7 +38,7 @@ a.active_sticky {
     display: inline-block;
     padding: 30px 0;
     font-size: 16px;
-    color: #063232;
+    color: #0e4747;
     font-weight: 400;
     font-family: "RB Nylo Test";
 }
@@ -121,11 +121,10 @@ a.active_sticky {
     font-weight: 500;
     background: #faab43;
     padding: 13px 30px;
-    border: 1px solid #faab43;
 }
 .header-button a:hover {
-    background-color: #fff;
-    color: #faab43;
+    background-color: #063232;
+    color: #ffffff;
     
 }
 .header-button.style_two a i {
@@ -321,6 +320,16 @@ h2.brand_title:before {
     border: 1px solid #eee;
     padding: 15px;
 }
+
+.brand-thumb{
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    height: 90px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
 .brand-thumb img {
 
 }
@@ -1151,7 +1160,7 @@ section.counter_area {
     display: inline-block;
     font-size: 60px;
     line-height: 52px;
-    color: #92ffc0;
+    color: #beffd9;
       
 }
 .counter-_number span {
@@ -2764,7 +2773,7 @@ section.service_area.style_four {
 }
 
 .service_single_item.style_four:hover {
-    background: #92ffc0;
+    background: #beffd9;
 }
 
 .service_single_item.style_four:hover .service_content h3 a ,
@@ -3651,7 +3660,7 @@ section.hero_area {
 }
 .hero_content h1 {
     font-size: 56px;
-      
+    overflow: hidden;
     line-height: 70px;
     position: relative;
     color: #fff;
@@ -3801,7 +3810,7 @@ section.hero_area {
 }
 .about_details a {
     font-size: 17px;
-      
+    text-transform: lowercase;
     fill: #063232;
     color: #063232;
     margin: -7px 0 0 0;
@@ -6785,12 +6794,11 @@ button.close-search i {
 }
 
 .list_about{
-    list-style-type: disc;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 0;
 }
 .list_about li{
-    list-style-type: disc;
     font-family: "RB Nylo Test Medium";
+    position: relative;
 }
 .mc4wp-form-fields {
     position: relative;
@@ -6869,5 +6877,5 @@ button.close-search i {
     height: 10px;
     background: #92ffc0;
     z-index: -1;
-    animation: bg-anim 5s linear infinite;
+    animation: slideInLeft 5s infinite;
 }
