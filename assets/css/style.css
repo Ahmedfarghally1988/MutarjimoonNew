@@ -2,6 +2,10 @@ body{
 
 }
 
+.text-main{
+    color: #faab43;
+}
+
 .advisar-header-area {
     position: relative;
     z-index: 3;
@@ -470,7 +474,7 @@ section.feature_area {
     font-size: 20px;
     line-height: 30px;
     color: #063232;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 16px;
     margin-top: 20px;
 }
@@ -495,8 +499,8 @@ h6.feature_no {
 
 .feature_shape {
     position: absolute;
-    top: 12%;
-    right: 21%;
+    top: 6%;
+    right: 0;
 }
 /*===========================================
 <-- Start Css Service Area -->
@@ -1167,7 +1171,7 @@ section.counter_area {
     display: inline-block;
     font-size: 60px;
     line-height: 52px;
-    color: #e0f1df;
+    color: #beffd9;
       
 }
 .counter_title {
@@ -1187,7 +1191,7 @@ section.counter_area {
     font-size: 15px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #fff;
+    color: #beffd9;
     font-weight: 400;
 }
 .proconsul_btn.right_btn {
@@ -2770,6 +2774,7 @@ section.service_area.style_four {
     padding: 10px;
     display: inherit;
     margin: 0 0 20px 0;
+    box-shadow: 0 0 10px #ddd;
 }
 
 .service_single_item.style_four:hover {
@@ -2980,6 +2985,12 @@ section.call_area {
     color: #ffffff;
     font-weight: 500;
     margin: 7px 0 0;
+}
+.call_info h2 {
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0 0 10px 0;
 }
 
 .advisar_btn.style_four a {
@@ -4135,19 +4146,20 @@ section.why_choose_us {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 120px 0 120px;
+    padding: 30px 0 10px;
 }
 .why_choose_us .section_title.style_three:before {
     bottom: 55%;
 }
 .why_choose_us .section_title.style_three p {
-    margin: 37px 0 20px;
-    width: 88%;
+    margin: 15px 0 20px;
+    width: 100%;
 }
 .choose_thumb {
     position: relative;
     z-index: 1;
-    margin-left: -67px;
+    margin-left: 0;
+    overflow: hidden;
 }
 .choose_thumb_shpae {
     position: absolute;
@@ -4909,16 +4921,16 @@ section.footer_area.style_three {
 }
 
 .breadcumb-area {
-    background: url(../images/inner-img/breadcrumb_bg.png);
+
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
-    padding: 182px 0 202px;
+    padding: 90px 0 100px;
     position: relative;
 }
 
 .breadcumb-area.style_two {
-    background: url(../images/inner-img/breadcumb2.png);
+
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -4936,7 +4948,7 @@ section.footer_area.style_three {
     z-index: -1;
 }
 
-.breadcumb-title h4 {
+.breadcumb-title h1 {
     padding-bottom: 20px;
     font-size: 48px;
     color: #ffffff;
@@ -4945,20 +4957,10 @@ section.footer_area.style_three {
     z-index: 1;
     display: inline-block;
 }
-.breadcumb-title h4:before {
-    position: absolute;
-    z-index: -1;
-    content: "";
-    left: 0;
-    bottom: 11px;
-    height: 12px;
-    width: 66%;
-    background: url(../images/inner-img/line_shape.png);
-    background-repeat: no-repeat;
-    margin: auto;
-    text-align: center;
-    right: 0;
+.breadcumb-title p{
+    color: #fff;
 }
+
 .breadcumb-content.style_two span.category {
     background-color: #faab43;
     display: inline-block;
@@ -5085,11 +5087,11 @@ section.pricing-area.inner_page .pricing-single-items:hover .pricing_icon {
 ==================================== */
 section.faq_area {
     background: #fff;
-    padding: 105px 0 100px;
+    padding: 20px 0 30px;
 }
 
 .tab_container {
-    margin: 0 219px 0;
+
 }
 /*accordion*/
 .accordion li {
@@ -5647,7 +5649,7 @@ section.contact_area.inner_section {
 
  section.feature_area.inner_page {
     background: #fff;
-    padding: 105px 0 110px;
+    padding: 40px 0 0;
 }
  .feature_item.style_two {
     background: #fff;
@@ -5679,6 +5681,9 @@ section.contact_area.inner_section {
     color: #faab43;
     font-size: 24px;
     margin-top: 6px;
+}
+.feature_item.style_two .feature_content p {
+    min-height: 80px;
 }
 
 /*--==============================================->
