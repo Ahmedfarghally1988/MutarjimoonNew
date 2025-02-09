@@ -702,7 +702,19 @@ $(function() {
                 });
     });
 
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 350) {
+            $('#FormContactjob').addClass('newClass');
+        } else {
+            $('#FormContactjob').removeClass('newClass');
+        }
 
+        if ($(this).scrollTop() > 900) {
+            $('.newClass').addClass('hiddenNewClass');
+        } else {
+            $('.newClass').removeClass('hiddenNewClass');
+        }
+    });
 
 })(jQuery);
 

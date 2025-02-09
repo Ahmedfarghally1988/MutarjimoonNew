@@ -6,6 +6,10 @@ body{
     color: #faab43;
 }
 
+.bg-main2{
+    background: #0E4747 !important;
+}
+
 .advisar-header-area {
     position: relative;
     z-index: 3;
@@ -402,7 +406,7 @@ section.brand_area.style_two {
 
 }
 .section_title.style_four {
-    margin-bottom: 30px !important;
+    margin-bottom: 20px !important;
 }
 /* advisar right */
 .conslat_right p {
@@ -4664,6 +4668,10 @@ section.contact_area {
 .contact-form-box.style_two .section_title.style_four {
     margin-bottom: 62px;
 }
+.contact-form-box.style_two .section_title.style_four h2{
+    margin: 0;
+    font-size: 24px;
+}
 .contact-form-box.style_two .section_title.style_four:before {
     width: 37%;
 }
@@ -4921,11 +4929,10 @@ section.footer_area.style_three {
 }
 
 .breadcumb-area {
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 90px 0 100px;
+    padding: 50px 0 50px;
     position: relative;
 }
 
@@ -4943,7 +4950,7 @@ section.footer_area.style_three {
     left: 0;
     top: 0;
     width: 100%;
-    height: 400px;
+    height:100%;
     background: #F4F8F9;
     z-index: -1;
 }
@@ -6883,4 +6890,147 @@ button.close-search i {
     background: #92ffc0;
     z-index: -1;
     animation: slideInLeft 5s infinite;
+}
+
+.block_view_jobs{
+    padding:50px 0;
+}
+
+.details_job{
+
+}
+.details_job h2{
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+.details_job h3{
+    font-size: 19px;
+    margin: 30px 0 10px 0;
+}
+.details_job p{
+
+}
+.details_job ul{
+    list-style-type: disc;
+    padding: 0 0 0 20px;
+}
+.details_job ul li{
+    list-style-type: disc;
+}
+.date-input{
+    text-align: right;
+}
+.date-input:before{
+    position: absolute;
+    content: "Start Date";
+    background: #fff;
+    width: 35%;
+    left: 20px;
+    text-align: left;
+}
+.cv-input{
+    padding: 10px 10px 0 0 !important;
+}
+.cv-input:before{
+    position: absolute;
+    content: "Upload CV";
+    background: #fff;
+    width: 40%;
+    left: 0;
+    height: 100%;
+    padding: 3px 0 0 25px;
+}
+
+.social_icon_share{
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    padding: 20px 20px;
+    margin: 0 0 15px 0;
+}
+
+.sharing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sharing-gap, 0.5rem);
+}
+.sharing-item {
+    transition: background 0.3s, color 0.3s;
+    color: var(--sharing-color, #fff);
+    background-color: var(--sharing-bg, #000);
+    padding: var(--sharing-padding, 0.875rem);
+    border-radius: var(--sharing-radius, 0.5rem);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1), 0 2px 5px -1px rgba(0, 0, 0, 0.05);
+}
+.sharing-item .i {
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    transition: transform 0.3s;
+    stroke-width: 2;
+    width: var(--sharing-size, 22px);
+    height: var(--sharing-size, 22px);
+    display: block;
+}
+.sharing-item:hover {
+    background-color: #fff;
+    --sharing-color: var(--sharing-bg, #000);
+}
+.sharing-item:hover .i {
+    transform: rotate(360deg);
+}
+.sharing-facebook {
+    --sharing-bg: #1778F2 ;
+}
+.sharing-bluesky {
+    --sharing-bg: #0085ff ;
+}
+.sharing-twitter {
+    --sharing-bg: #55ACEE ;
+}
+.sharing-pinterest {
+    --sharing-bg: #F0002A ;
+}
+.sharing-threads {
+    --sharing-bg: #000000 ;
+}
+.sharing-tumblr {
+    --sharing-bg: #35465C ;
+}
+.sharing-reddit {
+    --sharing-bg: #FF4500 ;
+}
+.sharing-vk {
+    --sharing-bg: #4376A6 ;
+}
+.sharing-whatsapp {
+    --sharing-bg: #4FCE5D ;
+}
+.sharing-telegram {
+    --sharing-bg: #0088CC ;
+}
+.sharing-linkedin {
+    --sharing-bg: #0077B5 ;
+}
+.sharing-envelope {
+    --sharing-bg: #464EB8 ;
+}
+
+#FormContactjob .form-box{
+    margin-bottom: 15px;
+}
+#FormContactjob .form-box input{
+    height: 50px;
+}
+
+.contact-form-box.style_two.newClass{
+    top: 100px !important;
+    position: fixed;
+    width: 380px;
+    z-index: 2;
+}
+
+.contact-form-box.style_two.newClass.hiddenNewClass{
+    position: relative;
 }
