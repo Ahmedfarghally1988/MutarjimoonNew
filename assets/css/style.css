@@ -1147,9 +1147,7 @@ section.counter_area {
     padding: 67px 0 42px;
 }
 .counter_upper {
-    border-bottom: 2px solid #1c9a98b5;
-    padding-bottom: 34px;
-    margin-bottom: 27px;
+
 }
 .counter-single-item {
     margin-bottom: 30px;
@@ -1200,6 +1198,8 @@ section.counter_area {
 }
 .proconsul_btn.right_btn {
     text-align: right;
+    height: 180px;
+    padding: 0 0 0 0;
 }
 
 .proconsul_btn.right_btn a {
@@ -1210,10 +1210,9 @@ section.counter_area {
     font-size: 16px;
       
     text-align: center;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    margin: 115px 0 0 0;
+    padding: 10px 25px;
+    width: 90%;
     border-radius: 30px;
     display: inline-block;
     background-color: #1C9A98;
@@ -1924,7 +1923,7 @@ section.team_area.inner_page {
     color: #6b7a7a;
     font-weight: 400;
 }
-.meta-blog p span {
+.meta-blog p span{
     background-color: #faab43;
     display: inline-block;
     font-size: 14px;
@@ -1937,6 +1936,23 @@ section.team_area.inner_page {
     position: relative;
     margin-right: 38px;
 }
+
+.single-blog-thumb span{
+    background-color: #faab43;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 30px;
+    padding: 3px 18px;
+    position: absolute;
+    margin-right: 38px;
+    top: 30px;
+    left: 30px;
+}
+
 .meta-blog p span:before {
     position: absolute;
     content: "";
@@ -3584,7 +3600,7 @@ section.footer_area.style_two {
     z-index: 1;
     content: "";
     left: 0px;
-    top: 11px;
+    top: 8px;
     width: 8px;
     height: 8px;
     border-radius: 4px;
@@ -5110,9 +5126,9 @@ section.faq_area {
     width: 100%;
     display: block;
     cursor: pointer;
-    background: #f4f8f9;
+    background: #faab43;
     border: 0;
-    padding: 25px 40px 25px;
+    padding: 25px 30px 25px;
     border-radius: 5px;
     z-index: 1;
     font-size: 22px;
@@ -5120,7 +5136,10 @@ section.faq_area {
     font-weight: 500;
     display: flex;
     justify-content: space-between;
-    color: #063232 !important;
+    color: #ffffff !important;
+}
+.accordion li a.active{
+    background: #faab43 !important;
 }
 .accordion li a:before {
     position: absolute;
@@ -5333,17 +5352,16 @@ p.port_text:before {
 
 /* sidebar box */
 .sidebar_box.style_two {
-    background: #f4f8f9;
-    padding: 35px 40px 33px;
+    background: #0E4747;
+    padding: 15px 25px 15px;
 }
 .sidebar_icon_box {
-    border-top: 1px dashed rgb(6 50 50 / 30%);
-    padding-top: 18px;
-    margin-top: 18px;
+    border-top: 1px dashed rgb(255 255 255 / 30%);
+    padding-top: 10px;
+    margin-top: 10px;
 }
 .sidebar_icon_box:nth-child(5) {
-    border-bottom: 1px dashed rgb(6 50 50 / 30%);
-    padding-bottom: 18px;
+
 }
 .sidebar_icon {
     float: left;
@@ -5746,17 +5764,20 @@ p.details_decs2 {
 .sidebar_box {
     background: #fff;
     padding: 45px 50px 50px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 h2.sidebar_title {
     font-size: 26px;
-    color: #063232;
+    color: #fff;
     font-weight: 500;
     margin-bottom: 12px;
 }
-.sidebar_box p {
-    margin-bottom: 12px;
+.sidebar_box p ,.sidebar_box p a {
+    color: #fff;
+    margin: 0;
 }
+
+
 .sidebar-list ul li {
     font-size: 16px;
     line-height: 38px;
@@ -7033,4 +7054,96 @@ button.close-search i {
 
 .contact-form-box.style_two.newClass.hiddenNewClass{
     position: relative;
+}
+
+.search_blog{
+    width: 400px;
+    margin: auto;
+}
+
+.search_blog input{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    padding: 10px 20px;
+    text-align: center;
+}
+.search_blog i{
+    position: absolute;
+    left: 20px;
+    top: 17px;
+}
+.head_bread{
+
+}
+.head_bread strong{
+    font-weight: normal;
+}
+.head_bread b{
+    font-weight: normal;
+    color: #beffd9;
+}
+
+.widget-viewBlog{
+    background: #0E4747;
+    padding: 15px 25px 15px;
+    border-radius: 15px;
+    margin: 0 0 30px 0;
+}
+
+.footer-widget-title h2{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.content--blog{
+
+}
+
+.img_view_blog{
+    overflow: hidden;
+    height: 250px;
+    display: flex;
+    border-radius:15px;
+    margin: 0 0 30px 0;
+}
+
+.img_view_blog img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.img-block-view{
+    position: absolute;
+    height: 140px;
+    width: 85%;
+    top: -36px;
+    left: 27px;
+    right: 0;
+    border-radius: 20px;
+}
+
+.block_contact_left{
+    background: #0E4747;
+    color: #fff;
+}
+
+.select_contact{
+    width: 100%;
+    height: 56px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 0;
+    outline: 0;
+    padding: 0 25px;
+    height: 54px;
+    background-color: #ffffff;
+    border: 1px solid #e6eaea;
+}
+
+.contact-form-box.contact-form-box-NoFillter.style_two{
+    filter: none;
 }
