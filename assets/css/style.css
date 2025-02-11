@@ -7147,3 +7147,44 @@ button.close-search i {
 .contact-form-box.contact-form-box-NoFillter.style_two{
     filter: none;
 }
+
+.block_ebook_left{
+    background: #d3ffe6;
+    padding: 20px;
+    border-radius: 25px;
+    margin: -270px 0 0 0;
+    position: relative;
+}
+.block_ebook_left img{
+    border-radius: 25px;
+}
+.content_ebooks{
+    margin: 50px 0;
+}
+.content_ebooks h2{
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+.content_ebooks p{
+
+}
+.content_ebooks ul{
+    list-style-type: disc;
+    padding: 0 0 0 15px;
+}
+.content_ebooks ul li{
+    list-style-type: disc;
+}
+
+.slider_ebook{
+    background: #d3ffe6;
+    padding: 20px;
+    border-radius: 25px;
+    margin: 0 0 0 0;
+    position: relative;
+    overflow: hidden;
+}
+.slider_ebook .carousel-item img{
+    width: 100%;
+    min-height: 100%;
+}
