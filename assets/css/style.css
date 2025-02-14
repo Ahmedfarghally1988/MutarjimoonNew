@@ -10,6 +10,9 @@ body{
     background: #0E4747 !important;
 }
 
+.bg_one{background: #d3ffe6 !important;}
+.bg_tow{background: #f4f8f9 !important;}
+
 .advisar-header-area {
     position: relative;
     z-index: 3;
@@ -5124,11 +5127,9 @@ section.faq_area {
 .accordion li a {
     position: relative;
     width: 100%;
-    display: block;
     cursor: pointer;
-    background: #faab43;
-    border: 0;
-    padding: 25px 30px 25px;
+    background: #ffffff;
+    padding: 10px 0 10px 25px;
     border-radius: 5px;
     z-index: 1;
     font-size: 22px;
@@ -5136,11 +5137,15 @@ section.faq_area {
     font-weight: 500;
     display: flex;
     justify-content: space-between;
-    color: #ffffff !important;
+    border: 1px solid #ddd;
 }
 .accordion li a.active{
     background: #faab43 !important;
 }
+.accordion li a.active h3{
+    color:#fff;
+}
+
 .accordion li a:before {
     position: absolute;
     content: "";
@@ -5160,9 +5165,11 @@ section.faq_area {
     font-size: 16px;
     color: #6b7a7a;
     padding: 24px 42px 33px 40px;
-    margin: 0;
+    margin: 5px 0 0 0;
     filter: drop-shadow(0px 10px 40px rgba(12,110,109,0.1)) !important;
     background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 a.active {
     color: #063232 !important;
@@ -5180,6 +5187,8 @@ a.active {
 }
 .accordion li a.active i {
     transform: rotate(90deg);
+    background: #fff;
+    color: #faab43;
 }
 .accordion li.ctive {
     background: #faab43 !important;
@@ -6979,7 +6988,7 @@ button.close-search i {
     transition: background 0.3s, color 0.3s;
     color: var(--sharing-color, #fff);
     background-color: var(--sharing-bg, #000);
-    padding: var(--sharing-padding, 0.875rem);
+    padding: var(--sharing-padding, 0.700rem);
     border-radius: var(--sharing-radius, 0.5rem);
     box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1), 0 2px 5px -1px rgba(0, 0, 0, 0.05);
 }
@@ -7043,17 +7052,6 @@ button.close-search i {
 }
 #FormContactjob .form-box input{
     height: 50px;
-}
-
-.contact-form-box.style_two.newClass{
-    top: 100px !important;
-    position: fixed;
-    width: 380px;
-    z-index: 2;
-}
-
-.contact-form-box.style_two.newClass.hiddenNewClass{
-    position: relative;
 }
 
 .search_blog{
@@ -7187,4 +7185,132 @@ button.close-search i {
 .slider_ebook .carousel-item img{
     width: 100%;
     min-height: 100%;
+}
+
+.img_main_searvice{
+    height:350px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin:30px 0;
+}
+
+.img_main_searvice img{
+    width:100%;
+    min-height: 100%;
+}
+
+.list_view_service{
+    list-style-type: disc;
+    padding: 15px 0 0 20px;
+}
+.list_view_service li{
+    list-style-type: disc;
+    color: #fff;
+}
+
+
+.sidebar_Career.NewClassCareer{
+    position: fixed;
+    transform: translateY(100px);
+    width: 368px;
+    z-index: 9;
+}
+
+.sidebar_service.NewClassService{
+    position: fixed;
+    transform: translateY(100px);
+    width: 368px;
+    z-index: 9;
+    top: 0;
+}
+
+
+.NewClassCareer.hiddenNewClass,
+.NewClassService.hiddenNewClass{
+    position: relative;
+}
+
+
+.content_service_one{
+
+}
+.content_service p{
+    margin: 15px 0;
+}
+
+.content_service ul{
+    list-style-type: disc;
+    padding: 0 0 0 20px;
+}
+
+.content_service ul li{
+    list-style-type: disc;
+    color:#000;
+}
+
+.icon_ser{
+    background: #d3ffe6;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 23px 0 0 0;
+}
+.img_section_four{
+    overflow: hidden;
+    height: 350px;
+    margin: 0 0 30px 0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+}
+
+
+.img_section_four img{
+    width: 100%;
+    min-height: 100%;
+}
+
+.accordion.list-style-one i{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    background: #faab43;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 3px;
+    color: #fff;
+}
+.brand-thumb-service{
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+
+.block_eight {
+
+}
+.img_block_eight{
+    overflow: hidden;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.img_block_eight a{
+    display: block;
+    height: 100%;
+}
+.img_block_eight img{
+    width: 100%;
+    min-height: 100%;
+}
+.block_eight a label{
+    color: #000;
+    line-height: 20px;
+    margin: 10px 0 0 0;
 }

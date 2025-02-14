@@ -703,18 +703,37 @@ $(function() {
     });
 
     $(window).scroll(function(){
-        if ($(this).scrollTop() > 350) {
-            $('#FormContactjob').addClass('newClass');
+
+        if ($(this).scrollTop() >350) {
+            $('.sidebar_Career').addClass('NewClassCareer');
         } else {
-            $('#FormContactjob').removeClass('newClass');
+            $('.sidebar_Career').removeClass('NewClassCareer');
         }
 
+
         if ($(this).scrollTop() > 900) {
-            $('.newClass').addClass('hiddenNewClass');
+            $('.NewClassCareer').addClass('hiddenNewClass');
         } else {
-            $('.newClass').removeClass('hiddenNewClass');
+            $('.NewClassCareer').removeClass('hiddenNewClass');
         }
+
+
+
+        if ($(this).scrollTop() > 575) {
+            $('.sidebar_service').addClass('NewClassService');
+        } else {
+            $('.sidebar_service').removeClass('NewClassService');
+        }
+
+        if ($(this).scrollTop() > 3000) {
+            $('.NewClassService').addClass('hiddenNewClass');
+        } else {
+            $('.NewClassService').removeClass('hiddenNewClass');
+        }
+
+
     });
+
 
 })(jQuery);
 
