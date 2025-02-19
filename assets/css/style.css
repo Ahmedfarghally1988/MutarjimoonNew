@@ -50,8 +50,7 @@ a.active_sticky {
     padding: 30px 0;
     font-size: 16px;
     color: #0e4747;
-    font-weight: 400;
-    font-family: "RB Nylo Test";
+    font-weight: 600;
 }
 .header-menu ul li span {
     font-size: 13px;
@@ -107,7 +106,7 @@ a.active_sticky {
     visibility: inherit !important;
     color: #000 !important;
     font-size: 16px;
-    font-family: "RB Nylo Test Medium";
+
       
 }
 .header-menu ul .sub_menu li:hover>a {
@@ -209,7 +208,6 @@ section.hero_area.style_two .hero_content h4 {
     font-size: 16px;
     padding: 15px 40px;
     color: #fff;
-    font-weight: 500;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -218,7 +216,8 @@ section.hero_area.style_two .hero_content h4 {
     animation: 1s 1.8s fadeInUp both;
     border-radius: 30px;
     background-color: #faab43;
-    font-family: "RB Nylo Test Medium";
+
+
 }
 a.slider_butn_active {
     background: #063232;
@@ -2254,9 +2253,7 @@ section.hero_area.style_two .hero_content h1:before {
 .hero_video_btn span {
     font-size: 20px;
     color: #faab43;
-    font-weight: 500;
     margin-left: 4px;
-    font-family: "RB Nylo Test Medium";
 }
 .hero_area.style_two .hero-thumb {
     position: relative;
@@ -2699,6 +2696,7 @@ section.about_area.style_two {
     font-size: 17px;
     font-weight: 500;
     margin: 0;
+    line-height: 30px;
 }
 .service_single_item.style_two .service_btn {
     position: absolute;
@@ -2721,7 +2719,7 @@ section.about_area.style_two {
     transform: rotate(0deg);
 }
 .style_two.service_single_item .service_thumb img {
-    width: inherit;
+    width: 100%;
 }
 
 .service_list.owl-carousel .owl-item img {
@@ -3485,7 +3483,7 @@ section.blog_area.style_two .section_title.style_four:before {
     bottom: -27%;
 }
 .blog_area.style_two  .single-blog-box {
-    margin-bottom: 30px;
+    margin: 15px 0;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -3584,7 +3582,7 @@ section.footer_area.style_two {
     overflow: hidden;
     font-size: 16px;
     line-height: 26px;
-    color: #ffffff;
+
     font-weight: 500;
     display: inline-block;
 }
@@ -3703,7 +3701,7 @@ section.hero_area {
 .hero_content p {
     margin: 40px 0 33px;
     color: #a3b7b7;
-    font-family: "RB Nylo Test Medium";
+
 }
 .hero_video_btn a {
     color: #063232;
@@ -3998,13 +3996,14 @@ section.service_area.style_two.style_three.inner_page {
     bottom: 0;
     height: 100%;
     width: 100%;
-    background: url(../images/main-home/service_shpe.png);
+    background: rgb(0 0 0 / 45%);
     transition: 0.5s;
     right: 0;
     margin: auto;
     top: 0;
     opacity: 0;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 .service_single_item.style_three:hover .service_thumb:before {
     opacity: 1;
@@ -5361,11 +5360,12 @@ p.port_text:before {
 
 /* sidebar box */
 .sidebar_box.style_two {
-    background: #0E4747;
-    padding: 15px 25px 15px;
+    padding: 0 0 0 15px;
+    border-left: 6px solid #faab43;
+    border-radius: 0;
 }
 .sidebar_icon_box {
-    border-top: 1px dashed rgb(255 255 255 / 30%);
+    border-top: 1px dashed rgb(0 0 0 / 18%);
     padding-top: 10px;
     margin-top: 10px;
 }
@@ -5694,6 +5694,7 @@ section.contact_area.inner_section {
     border: 1px solid #fff;
     transition: .5s;
     transform: translateY(0px);
+     min-height: 185px;
 }
 .feature_item.style_two:hover {
     transform: translateY(-10px);
@@ -5717,7 +5718,7 @@ section.contact_area.inner_section {
     margin-top: 6px;
 }
 .feature_item.style_two .feature_content p {
-    min-height: 80px;
+    margin: 0;
 }
 
 /*--==============================================->
@@ -5777,12 +5778,10 @@ p.details_decs2 {
 }
 h2.sidebar_title {
     font-size: 26px;
-    color: #fff;
     font-weight: 500;
     margin-bottom: 12px;
 }
 .sidebar_box p ,.sidebar_box p a {
-    color: #fff;
     margin: 0;
 }
 
@@ -6798,7 +6797,7 @@ button.close-search i {
     border-radius: 0 !important;
     padding: 15px;
     position: relative;
-    font-family: "RB Nylo Test Medium";
+
 }
 
 .nav-tabs-menu li button.active:before{
@@ -6839,8 +6838,12 @@ button.close-search i {
     padding: 0 0 0 0;
 }
 .list_about li{
-    font-family: "RB Nylo Test Medium";
+
     position: relative;
+}
+
+.list_about li i{
+    color: green;
 }
 .mc4wp-form-fields {
     position: relative;
@@ -7084,7 +7087,7 @@ button.close-search i {
 }
 
 .widget-viewBlog{
-    background: #0E4747;
+    background: #eee;
     padding: 15px 25px 15px;
     border-radius: 15px;
     margin: 0 0 30px 0;
@@ -7092,7 +7095,7 @@ button.close-search i {
 
 .footer-widget-title h2{
     font-size: 26px;
-    color: #fff;
+
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -7103,7 +7106,6 @@ button.close-search i {
 
 .img_view_blog{
     overflow: hidden;
-    height: 250px;
     display: flex;
     border-radius:15px;
     margin: 0 0 30px 0;
@@ -7175,12 +7177,12 @@ button.close-search i {
 }
 
 .slider_ebook{
-    background: #d3ffe6;
     padding: 20px;
     border-radius: 25px;
     margin: 0 0 0 0;
     position: relative;
     overflow: hidden;
+    border: 1px solid #ddd;
 }
 .slider_ebook .carousel-item img{
     width: 100%;
@@ -7188,10 +7190,10 @@ button.close-search i {
 }
 
 .img_main_searvice{
-    height:350px;
     border-radius: 25px;
     overflow: hidden;
-    margin:30px 0;
+    margin: 30px 0;
+    height: 350px;
 }
 
 .img_main_searvice img{
@@ -7224,27 +7226,37 @@ button.close-search i {
     top: 0;
 }
 
+.sidebar_blog.NewClassBlog{
+    position: fixed;
+    transform: translateY(100px);
+    width: 368px;
+    z-index: 9;
+    top: 0;
+}
 
 .NewClassCareer.hiddenNewClass,
-.NewClassService.hiddenNewClass{
+.NewClassService.hiddenNewClass,
+.NewClassBlog.hiddenNewClass{
     position: relative;
 }
 
 
 .content_service_one{
-
+    padding: 10px 25px;
+    border: 1px solid #ddd;
+    margin: 0 0 15px 0;
+    border-radius: 15px;
 }
 .content_service p{
     margin: 15px 0;
 }
 
 .content_service ul{
-    list-style-type: disc;
-    padding: 0 0 0 20px;
+    padding: 0;
 }
 
 .content_service ul li{
-    list-style-type: disc;
+    list-style-type: none;
     color:#000;
 }
 
@@ -7292,11 +7304,14 @@ button.close-search i {
 
 
 .block_eight {
-
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background: #eee;
 }
 .img_block_eight{
     overflow: hidden;
-    height: 200px;
+    height: 140px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -7313,4 +7328,69 @@ button.close-search i {
     color: #000;
     line-height: 20px;
     margin: 10px 0 0 0;
+    height: 80px;
+    overflow: hidden;
+}
+
+.img_iso{
+    margin: 0 0 15px 0;
+}
+.img_iso img{
+    animation: circle 15s linear infinite;
+    animation: circle 15s linear infinite;
+    position: relative;
+    z-index: 22;
+    fill: transparent;
+}
+.pagination .page-item a{
+    text-decoration: auto;
+}
+
+.block__career{
+    padding: 30px;
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 15px;
+    background: #d3ffe6;
+    margin-bottom: 15px;
+}
+
+.accr-blog{
+    background: #ddd;
+    margin: 0 0 15px 0;
+}
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: #faab43;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.content-article{
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin: 0 0 15px 0;
+    border-radius: 15px;
+}
+
+.newslitter-sidebar{
+    background: #faab43;
+    padding: 15px;
+    border-radius: 15px;
+}
+.newslitter-sidebar label{
+    font-size: 19px;
+    margin: 5px 0 15px 0;
+}
+
+.sidebar_box.style_two.sidebar_service.sidebar_service_single{
+    background: #ddd;
+    border: 0;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.sidebar_box.style_two.sidebar_service.sidebar_service_single .list_view_service li{
+    color: #000;
+}
+.list_point_desc li i{
+    color: green;
 }

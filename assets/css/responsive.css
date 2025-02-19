@@ -3139,7 +3139,7 @@
         border-radius: 0;
     }
     .hero_content h1 {
-        font-size: 41px;
+        font-size: 34px;
         line-height: 48px;
     }
     .hero_content h1 span{
@@ -3201,11 +3201,12 @@
     }
 
     .section_title h3{
-        margin: 0;
+        margin: 10px 0 15px 0 !important;
     }
 
     .section_title h2{
         font-size: 22px;
+        margin: 0;
     }
     .section_title h1 {
         font-size: 18px;
@@ -3216,8 +3217,9 @@
         padding: 80px 0 70px;
     }
     .feature_item {
-        padding: 40px 15px 30px 15px;
+        padding: 25px 15px 20px 15px !important;
         text-align: center;
+        margin: 0 0 15px 0;
     }
     .feature_item:hover {
         background-size: cover;
@@ -3238,6 +3240,7 @@
     }
     .service_content h3 {
         font-size: 15px;
+        line-height: 12px;
     }
     .service_shape {
         display: none;
@@ -3479,7 +3482,7 @@ section.case-study-area {
         display: block;
     }
     section.about_area.style_four {
-        padding: 40px 0 30px;
+        padding: 10px 0 0;
     }
     section.counter_area {
         padding: 30px 0 10px;
@@ -3501,8 +3504,9 @@ section.case-study-area {
         padding: 105px 0 80px;
     }
     .proconsul_btn.right_btn {
-        text-align: left;
         margin-top: 20px;
+        height: auto;
+        text-align: center;
     }
     .why_choose_single_item {
         display: block;
@@ -3527,7 +3531,7 @@ section.case-study-area {
         display: none;
     }
     .service_single_item.style_two .service_thumb {
-        display: none;
+
     }
     .service_list .owl-nav {
         display: none;
@@ -3561,7 +3565,7 @@ section.case-study-area {
         margin-bottom: 30px;
     }
     section.testimonial_area.style_two {
-        padding: 20px 0 20px;
+        padding: 0;
     }
     .row.brand_upper {
 
@@ -3605,7 +3609,7 @@ section.case-study-area {
     }
     .call-do-action-info {
         display: flex;
-        margin: 0 0 30px 0 !important;
+        margin: 0 0 0 0 !important;
         padding: 0 !important;
     }
     .call-do-social_icon {
@@ -3702,7 +3706,7 @@ section.case-study-area {
     }
     section.why_choose_us {
         background-position: right;
-        padding: 30px 0 20px;
+        padding: 30px 0 0;
     }
     .choose_thumb {
         margin-left: 0;
@@ -3711,7 +3715,7 @@ section.case-study-area {
         width: 100%;
     }
     .contact-form-box.style_two .section_title h1 {
-        font-size: 20px;
+        font-size: 17px;
     }
     .section_title.style_three:before {
        display: none;
@@ -3746,7 +3750,7 @@ section.case-study-area {
         left: 15%;
     }
     section.service_area.style_three {
-        padding: 85px 0 135px;
+        padding: 15px 0 135px;
     }
     .why_choose_us .section_title.style_three:before {
         bottom: 61%;
@@ -3781,7 +3785,7 @@ section.case-study-area {
         border: none;
     }
     .contact-form-box.style_two {
-        padding: 44px 10px 60px;
+        padding: 15px 10px 15px !important;
     }
     .call-do-action-info.style_two .call-do-social_icon:before {
         left: -15%;
@@ -3794,15 +3798,16 @@ section.case-study-area {
     }
     section.call_area {
         padding: 20px 0 15px;
+        margin-top: 15px;
     }
     section.testimonial_area.style_three {
-        padding: 0px 0 145px;
+        padding: 0 0 145px;
     }
     section.contact_area {
         padding: 100px 0 200px;
     }
     section.footer_area.style_three {
-        padding: 15px 0 10px;
+        padding: 15px 15px 10px;
     }
 
     .row.add-border {
@@ -3865,10 +3870,11 @@ section.case-study-area {
             padding: 60px 0 60px;
         }
         .service_single_item.style_two .service_content h3 a {
-            font-size: 14px;
+            font-size: 12px;
+            line-height: normal;
         }
         .service_single_item.style_four {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
         }
         .pagination_btns p {
             font-size: 11px;
@@ -4134,7 +4140,7 @@ section.case-study-area {
     /* ====== Start Breadcumb Area Csss ======= */
 
     .breadcumb-area {
-        padding: 182px 0 166px;
+        padding: 100px 0 30px;
         background-size: cover;
     }
     .team_thumb img {
@@ -4244,7 +4250,7 @@ section.case-study-area {
         left: 31%;
     }
     section.contact_area.inner_section {
-        padding: 0;
+        padding: 15px 0 0 0;
     }
     .contact_main_info {
         padding: 10px 20px 20px;
@@ -4252,17 +4258,18 @@ section.case-study-area {
     }
 
     .section_title{
-
+        padding: 0 15px;
     }
 
     .inner_section .contact-form-box.style_two {
-        padding: 20px 20px 20px;
+        padding: 0 15px 20px;
+        filter: none;
     }
     .footer-bottom-menu {
         text-align: left;
     }
     section.faq_area {
-        padding: 85px 0 80px;
+        padding: 0;
     }
     .tab_container {
         margin: 0;
@@ -4328,4 +4335,119 @@ section.case-study-area {
 /*xl device min width*/
 @media screen and (min-width:1200px) {
 
+}
+
+/*xl device min width*/
+@media screen and (max-width:1024px) {
+    .section-title{
+        margin: 0 !important;
+    }
+    .section-title h2.title{
+        font-size: 22px;
+    }
+    .breadcumb-title h1 {
+        padding: 15px 0;
+        font-size: 27px;
+    }
+    section.feature_area.inner_page {
+        padding: 15px 0;
+    }
+    .service_single_item.style_four .service_content{
+        padding: 10px;
+    }
+    .brand-thumb {
+        height: 60px;
+    }
+    .search_blog {
+        width: 100%;
+        margin: auto;
+    }
+    .block__career {
+        padding: 15px;
+    }
+    .block__career h3{
+        font-size: 24px;
+    }
+    .service_area.style_two.style_three.inner_page .service_single_item.style_three {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+    .block_ebook_left {
+        margin: -30px 0 15px 0;
+    }
+    .content_ebooks {
+        margin: 0;
+        padding: 0 15px;
+    }
+    .breadcumb-area .col-lg-8.text-left{
+        text-align: center;
+    }
+    .order-mob{
+        order: 1;
+    }
+    .content-article{
+        padding: 0 15px;
+    }
+    .img-block-view {
+        position: relative;
+        height: auto;
+        width: 85%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .proconsul_btn.right_btn a{
+        padding: 10px 25px;
+        width: 85%;
+        margin: 15px 0 0 0;
+    }
+    .text-style-mob{
+        text-align: center;
+    }
+    .text-style-mob h2{
+        font-size: 17px !important;
+        margin: 10px 0 20px 0;
+    }
+    .slider_ebook {
+        margin: 15px 0 15px 0;
+    }
+    .sidebar_box.style_two.sidebar_service.sidebar_service_single,
+    .sidebar_blog.NewClassBlog,
+    .sidebar_Career.NewClassCareer{
+        position: relative;
+        width: 100%;
+        transform: none;
+        z-index: auto;
+    }
+    .sucribe{
+        display: none;
+    }
+    .img_main_searvice{
+        height: auto;
+    }
+
+    .content_service_one h2{
+        font-size: 24px;
+    }
+    .img_block_eight {
+        height: 100px;
+    }
+    .block_eight {
+        margin: 0 0 15px 0;
+    }
+    .proconsul_btn.right_btn {
+        padding: 0 !important;
+    }
+    .section_title {
+        padding: 5px 0 15px 0;
+        text-align: center;
+    }
+    .img_section_four {
+        height: auto;
+    }
+
+    .content_service_four h2{
+        margin: 0 0 15px 0;
+    }
 }

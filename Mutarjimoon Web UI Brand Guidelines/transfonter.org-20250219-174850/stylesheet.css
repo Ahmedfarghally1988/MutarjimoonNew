@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-HeavyItalic.woff2') format('woff2'),
+        url('RBNylo-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-Black.woff2') format('woff2'),
+        url('RBNylo-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-Light.woff2') format('woff2'),
+        url('RBNylo-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-Medium.woff2') format('woff2'),
+        url('RBNylo-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-BlackItalic.woff2') format('woff2'),
+        url('RBNylo-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-ExtraLight.woff2') format('woff2'),
+        url('RBNylo-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-ExtraBold.woff2') format('woff2'),
+        url('RBNylo-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-Regular.woff2') format('woff2'),
+        url('RBNylo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-MediumItalic.woff2') format('woff2'),
+        url('RBNylo-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-Bold.woff2') format('woff2'),
+        url('RBNylo-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-LightItalic.woff2') format('woff2'),
+        url('RBNylo-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-BoldItalic.woff2') format('woff2'),
+        url('RBNylo-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-ExtraBoldItalic.woff2') format('woff2'),
+        url('RBNylo-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-ExtraLightItalic.woff2') format('woff2'),
+        url('RBNylo-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-Heavy.woff2') format('woff2'),
+        url('RBNylo-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-Thin.woff2') format('woff2'),
+        url('RBNylo-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-RegularItalic.woff2') format('woff2'),
+        url('RBNylo-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-SemiBold.woff2') format('woff2'),
+        url('RBNylo-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-SemiBoldItalic.woff2') format('woff2'),
+        url('RBNylo-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RB Nylo Test';
+    src: url('RBNylo-ThinItalic.woff2') format('woff2'),
+        url('RBNylo-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+

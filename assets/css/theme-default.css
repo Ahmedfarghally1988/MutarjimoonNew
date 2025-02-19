@@ -1,10 +1,9 @@
 /*
-
-font-family: "RB Nylo Test";
-font-family: "RB Nylo Test ExtraLight";
-font-family: "RB Nylo Test Medium";
-font-family: "RB Nylo Test ExtraBold";
-font-family: "RB Nylo Test Heavy";
+    font-family: "RB Nylo Test";
+    font-family: "RB Nylo Test ExtraLight";
+    font-family: "RB Nylo Test Medium";
+    font-family: "RB Nylo Test ExtraBold";
+    font-family: "RB Nylo Test Heavy";
 */
 
 
@@ -17,18 +16,24 @@ body {
     font-size: 16px;
     line-height: 26px;
     color: #6b7a7a;
-    font-weight: 400;
     text-align: left;
-    font-family: "RB Nylo Test Medium";
+
+    font-family: 'RB Nylo Test';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 p {
     font-size: 16px;
     line-height: 26px;
     color: #000;
-    font-weight: 400;
-    font-family: "RB Nylo Test Medium";
     transition: 0.5s;
+
+    font-family: 'RB Nylo Test';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 h1,
@@ -38,15 +43,17 @@ h4,
 h5,
 h6 {
     color: #0e4747;
-    font-family: "RB Nylo Test Medium";
-    font-style: normal;
     margin-bottom: 0;
     margin-top: 11px;
     line-height: 1.2;
-    font-weight: 600;
     -webkit-transition: .5s;
     transition: .5s;
     font-size: 42px;
+
+    font-family: 'RB Nylo Test';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 a {

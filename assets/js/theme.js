@@ -731,6 +731,17 @@ $(function() {
             $('.NewClassService').removeClass('hiddenNewClass');
         }
 
+        if ($(this).scrollTop() > 1024) {
+            $('.sidebar_blog').addClass('NewClassBlog');
+        } else {
+            $('.sidebar_blog').removeClass('NewClassBlog');
+        }
+
+        if ($(this).scrollTop() > 3000) {
+            $('.NewClassBlog').addClass('hiddenNewClass');
+        } else {
+            $('.NewClassBlog').removeClass('hiddenNewClass');
+        }
 
     });
 
