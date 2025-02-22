@@ -3498,7 +3498,8 @@ section.case-study-area {
         font-size: 14px;
     }
     section.service_area.style_four {
-        padding: 25px 0 0;
+        padding: 25px 0 0 0;
+        margin: 0 0 25px 0;
     }
     section.why_choose_area {
         padding: 105px 0 80px;
@@ -3785,7 +3786,7 @@ section.case-study-area {
         border: none;
     }
     .contact-form-box.style_two {
-        padding: 15px 10px 15px !important;
+        padding: 15px 25px 15px !important;
     }
     .call-do-action-info.style_two .call-do-social_icon:before {
         left: -15%;
@@ -4250,12 +4251,14 @@ section.case-study-area {
         left: 31%;
     }
     section.contact_area.inner_section {
-        padding: 15px 0 0 0;
+        padding: 30px 0 0 0;
     }
     .contact_main_info {
         padding: 10px 20px 20px;
         margin-bottom: 0;
     }
+
+
 
     .section_title{
         padding: 0 15px;
@@ -4339,6 +4342,12 @@ section.case-study-area {
 
 /*xl device min width*/
 @media screen and (max-width:1024px) {
+    .section_title h3.m-contact-pho{
+        margin: 10px 0 10px 0 !important;
+    }
+    .breadcumb-title p.head_bread {
+        font-size: 8px;
+    }
     .section-title{
         margin: 0 !important;
     }
@@ -4449,5 +4458,9 @@ section.case-study-area {
 
     .content_service_four h2{
         margin: 0 0 15px 0;
+    }
+
+    .m-t-m{
+        margin: 10px 0 0 0 !important;
     }
 }

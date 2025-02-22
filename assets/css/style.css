@@ -1217,7 +1217,7 @@ section.counter_area {
     width: 90%;
     border-radius: 30px;
     display: inline-block;
-    background-color: #1C9A98;
+    background-color: #faab43;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     border: none;
@@ -1229,14 +1229,14 @@ section.counter_area {
     height: 0;
     display: block;
     border-radius: 30px;
-    background-color: #063232;
+    background-color: #fff;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 .proconsul_btn.right_btn a:hover, .proconsul_btn.right_btn a:focus {
-	color: #ffff;
+	color: #faab43;
 }
 .proconsul_btn.right_btn a:hover span, .proconsul_btn.right_btn a:focus span {
 	width: 200%;
@@ -6866,8 +6866,8 @@ button.close-search i {
     margin-right: 20px;
 }
 .mc4wp-form-fields .mailchimp-form button {
-    font-size: 16px;
-    padding: 16px 37px;
+    font-size: 12px;
+    padding: 16px 20px 16px 26px;
     color: #fff;
     font-weight: 500;
     display: inline-block;
@@ -7336,11 +7336,7 @@ button.close-search i {
     margin: 0 0 15px 0;
 }
 .img_iso img{
-    animation: circle 15s linear infinite;
-    animation: circle 15s linear infinite;
-    position: relative;
-    z-index: 22;
-    fill: transparent;
+
 }
 .pagination .page-item a{
     text-decoration: auto;
