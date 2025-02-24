@@ -704,20 +704,6 @@ $(function() {
 
     $(window).scroll(function(){
 
-        if ($(this).scrollTop() >350) {
-            $('.sidebar_Career').addClass('NewClassCareer');
-        } else {
-            $('.sidebar_Career').removeClass('NewClassCareer');
-        }
-
-
-        if ($(this).scrollTop() > 900) {
-            $('.NewClassCareer').addClass('hiddenNewClass');
-        } else {
-            $('.NewClassCareer').removeClass('hiddenNewClass');
-        }
-
-
 
         if ($(this).scrollTop() > 575) {
             $('.sidebar_service').addClass('NewClassService');
@@ -732,16 +718,17 @@ $(function() {
         }
 
         if ($(this).scrollTop() > 1024) {
-            $('.sidebar_blog').addClass('NewClassBlog');
+            $('.sucribe').addClass('NewClassBlog');
         } else {
-            $('.sidebar_blog').removeClass('NewClassBlog');
+            $('.sucribe').removeClass('NewClassBlog');
         }
 
-        if ($(this).scrollTop() > 3000) {
+        if ($(this).scrollTop() > 3900) {
             $('.NewClassBlog').addClass('hiddenNewClass');
         } else {
             $('.NewClassBlog').removeClass('hiddenNewClass');
         }
+        
 
     });
 
