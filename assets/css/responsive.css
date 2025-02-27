@@ -4342,6 +4342,40 @@ section.case-study-area {
 
 /*xl device min width*/
 @media screen and (max-width:1024px) {
+    .counter_upper .section_title h2{
+        padding: 0 20px;
+    }
+    .section_title.section_title_sector{
+        padding: 0 !important;
+        margin: 25px 0 0 0 !important;
+    }
+    .section_title.section_title_sector p{
+        padding: 0;
+        margin: 0 0 15px 0 !important;
+    }
+    .desc-sector {
+        height: auto;
+        padding: 50px 20px 0 20px;
+        text-align: center;
+        margin:0 0 30px 0;
+    }
+    .desc-sector h2{
+        font-size: 21px;
+    }
+    .img_sector {
+        height: 350px;
+    }
+
+    .icon_img_sector{
+        top: -50px;
+        left: 38%;
+    }
+
+    .order-mob-1{
+        order: -1;
+        width: 100% !important;
+    }
+
     .section_title h3.m-contact-pho{
         margin: 10px 0 10px 0 !important;
     }

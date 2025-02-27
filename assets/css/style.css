@@ -2791,7 +2791,7 @@ section.service_area.style_four {
     padding: 50px 0 50px;
 }
 .service_single_item.style_four {
-    background: #fff;
+    background: #eee;
     padding: 10px;
     display: inherit;
     margin: 0 0 20px 0;
@@ -5719,6 +5719,7 @@ section.contact_area.inner_section {
 }
 .feature_item.style_two .feature_content p {
     margin: 0;
+    min-height: 75px;
 }
 
 /*--==============================================->
@@ -7405,4 +7406,62 @@ button.close-search i {
 .block_whatsapp a {
     color: #fff;
     font-size: 22px;
+}
+
+.img_sector{
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background: #000;
+}
+.img_sector img{
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.desc-sector{
+    height: 500px;
+    overflow: hidden;
+    background: #ddd;
+    padding: 100px 60px 0 100px;
+}
+
+.icon_img_sector{
+    background: #ffffff;
+    border: 6px solid #e3e3e3;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: -50px;
+    top: 40%;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+}
+.icon_img_sector img{
+    margin: auto;
+}
+.img_tit_sector{
+    margin: 0 10px 5px 0;
+    background: #fff;
+    padding: 6px;
+    border-radius: 100%;
+}
+.img_tit_sector img{
+    height: 34px;
+}
+
+.img_sidebar_sector{
+    width: 100%;
+    margin: 25px 0 0 0;
+    border-radius: 15px;
+}
+.sidebar_sector.NewClassSector{
+    position: fixed;
+    transform: translateY(0);
+    width: 278px;
+    z-index: 9;
+    top: 0;
 }

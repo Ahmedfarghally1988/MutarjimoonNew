@@ -728,10 +728,23 @@ $(function() {
         } else {
             $('.NewClassBlog').removeClass('hiddenNewClass');
         }
-        
+        //
+        // if ($(this).scrollTop() > 1024) {
+        //     $('.sidebar_sector').addClass('NewClassSector');
+        // } else {
+        //     $('.sidebar_sector').removeClass('NewClassSector');
+        // }
+
 
     });
 
+    $( document ).ready(function() {
+        $('#overlay').modal('show');
+
+        setTimeout(function() {
+            $('#overlay').modal('hide');
+        }, 5000);
+    });
 
 })(jQuery);
 
