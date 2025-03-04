@@ -4345,6 +4345,17 @@ section.case-study-area {
     .counter_upper .section_title h2{
         padding: 0 20px;
     }
+    #wizard .card {
+        padding: 30px !important;
+    }
+    .nav-words .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+        width: 100%;
+        margin: 2px 0;
+        font-size: 14px;
+    }
+    .des_block_words h4 {
+        padding: 0 0;
+    }
     .section_title.section_title_sector{
         padding: 0 !important;
         margin: 25px 0 0 0 !important;

@@ -746,6 +746,57 @@ $(function() {
         }, 5000);
     });
 
+    $(document).ready(function(){
+        $("#wizard-content").carousel({
+            interval: 0,
+            touch: false,
+            ride: false
+        });
+
+        let fakeLoadingTime = 750;
+
+        $("#wizard-content").carousel('pause');
+
+        $("#wizard-next").on("click", function(){
+            let wizardSteps = $(this).parents("#wizard");
+            if ( parseInt(wizardSteps.attr("data-total-steps")) > parseInt(wizardSteps.attr("data-step")) ) {
+                wizardSteps.attr("data-step", parseInt(wizardSteps.attr("data-step")) + 1 );
+                playProgress();
+                var a = setTimeout(function(){
+                    $("#wizard-content").carousel("next");
+                    $("#wizard-content").carousel("pause");
+                }, fakeLoadingTime);
+            }
+        });
+        $("#wizard-prev").on("click", function(){
+            let wizardSteps = $(this).parents("#wizard");
+            if ( parseInt(wizardSteps.attr("data-step")) > 1 ) {
+                wizardSteps.attr("data-step", parseInt(wizardSteps.attr("data-step")) - 1 );
+                playProgress();
+                var a = setTimeout(function(){
+                    $("#wizard-content").carousel("prev");
+                    $("#wizard-content").carousel("pause");
+                }, fakeLoadingTime);
+            }
+        });
+        $("#wizard .steps li a").on("click", function(){
+            let thisStep = $(this).find(".bullet span:first-child").text();
+            $(this).parents("#wizard").attr("data-step", thisStep);
+            playProgress();
+            var a = setTimeout(function(){
+                $("#wizard-content").carousel( parseInt(thisStep)-1 );
+                $("#wizard-content").carousel("pause");
+            }, fakeLoadingTime);
+        });
+        //fake progressbar animation
+        function playProgress() {
+            $(".progress-bar").addClass("play");
+            var a = setTimeout(function(){
+                $(".progress-bar").removeClass("play");
+            }, 1300);
+        }
+    });
+
 })(jQuery);
 
 

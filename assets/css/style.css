@@ -7465,3 +7465,530 @@ button.close-search i {
     z-index: 9;
     top: 0;
 }
+
+/*********************** Style Quote ***********************/
+#wizard[data-step="1"] .steps li:nth-child(1) a,
+#wizard[data-step="2"] .steps li:nth-child(2) a,
+#wizard[data-step="3"] .steps li:nth-child(3) a,
+#wizard[data-step="4"] .steps li:nth-child(4) a,
+#wizard[data-step="5"] .steps li:nth-child(5) a,
+#wizard[data-step="6"] .steps li:nth-child(6) a {
+    pointer-events: none;
+}
+#wizard[data-step="1"] .steps li:nth-child(1) a .bullet,
+#wizard[data-step="2"] .steps li:nth-child(2) a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(3) a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(4) a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(5) a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(6) a .bullet {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #FFF;
+    transition-delay: 0.3s;
+    font-weight: bold;
+}
+#wizard[data-step="1"] .steps li:nth-child(1) a .bullet span,
+#wizard[data-step="2"] .steps li:nth-child(2) a .bullet span,
+#wizard[data-step="3"] .steps li:nth-child(3) a .bullet span,
+#wizard[data-step="4"] .steps li:nth-child(4) a .bullet span,
+#wizard[data-step="5"] .steps li:nth-child(5) a .bullet span,
+#wizard[data-step="6"] .steps li:nth-child(6) a .bullet span {
+    animation: bulletNumbers cubic-bezier(0, 1.8, 1, 1.8) 0.3s 0.3s;
+}
+#wizard[data-step="1"] .steps li:nth-child(1) + li a,
+#wizard[data-step="2"] .steps li:nth-child(2) + li a,
+#wizard[data-step="3"] .steps li:nth-child(3) + li a,
+#wizard[data-step="4"] .steps li:nth-child(4) + li a,
+#wizard[data-step="5"] .steps li:nth-child(5) + li a,
+#wizard[data-step="6"] .steps li:nth-child(6) + li a,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li a,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li a,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li a,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li a,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li a,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li a,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li a,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li a,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li a,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li a,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li a,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li a,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li + li a,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li + li a,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li + li a,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li + li a,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li + li a,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li + li a,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li + li + li a,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li + li + li a,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li + li + li a,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li + li + li a,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li + li + li a,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li + li + li a {
+    pointer-events: none;
+}
+#wizard[data-step="1"] .steps li:nth-child(1) + li a .bullet,
+#wizard[data-step="2"] .steps li:nth-child(2) + li a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(3) + li a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(4) + li a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(5) + li a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(6) + li a .bullet,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li a .bullet,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li a .bullet,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li a .bullet,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li a .bullet,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li + li a .bullet,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li + li a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li + li a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li + li a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li + li a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li + li a .bullet,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li + li + li a .bullet,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li + li + li a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li + li + li a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li + li + li a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li + li + li a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li + li + li a .bullet,
+#wizard[data-step="1"] .steps li:nth-child(1) + li a .title,
+#wizard[data-step="2"] .steps li:nth-child(2) + li a .title,
+#wizard[data-step="3"] .steps li:nth-child(3) + li a .title,
+#wizard[data-step="4"] .steps li:nth-child(4) + li a .title,
+#wizard[data-step="5"] .steps li:nth-child(5) + li a .title,
+#wizard[data-step="6"] .steps li:nth-child(6) + li a .title,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li a .title,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li a .title,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li a .title,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li a .title,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li a .title,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li a .title,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li a .title,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li a .title,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li a .title,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li a .title,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li a .title,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li a .title,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li + li a .title,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li + li a .title,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li + li a .title,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li + li a .title,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li + li a .title,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li + li a .title,
+#wizard[data-step="1"] .steps li:nth-child(1) + li + li + li + li + li a .title,
+#wizard[data-step="2"] .steps li:nth-child(2) + li + li + li + li + li a .title,
+#wizard[data-step="3"] .steps li:nth-child(3) + li + li + li + li + li a .title,
+#wizard[data-step="4"] .steps li:nth-child(4) + li + li + li + li + li a .title,
+#wizard[data-step="5"] .steps li:nth-child(5) + li + li + li + li + li a .title,
+#wizard[data-step="6"] .steps li:nth-child(6) + li + li + li + li + li a .title {
+    color: #444;
+}
+#wizard[data-step="2"] .steps li:nth-child(1) a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(1) a .bullet,
+#wizard[data-step="3"] .steps li:nth-child(2) a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(1) a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(2) a .bullet,
+#wizard[data-step="4"] .steps li:nth-child(3) a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(1) a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(2) a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(3) a .bullet,
+#wizard[data-step="5"] .steps li:nth-child(4) a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(1) a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(2) a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(3) a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(4) a .bullet,
+#wizard[data-step="6"] .steps li:nth-child(5) a .bullet {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #FFF;
+}
+#wizard[data-step="2"] .steps li:nth-child(1) a .bullet span,
+#wizard[data-step="3"] .steps li:nth-child(1) a .bullet span,
+#wizard[data-step="3"] .steps li:nth-child(2) a .bullet span,
+#wizard[data-step="4"] .steps li:nth-child(1) a .bullet span,
+#wizard[data-step="4"] .steps li:nth-child(2) a .bullet span,
+#wizard[data-step="4"] .steps li:nth-child(3) a .bullet span,
+#wizard[data-step="5"] .steps li:nth-child(1) a .bullet span,
+#wizard[data-step="5"] .steps li:nth-child(2) a .bullet span,
+#wizard[data-step="5"] .steps li:nth-child(3) a .bullet span,
+#wizard[data-step="5"] .steps li:nth-child(4) a .bullet span,
+#wizard[data-step="6"] .steps li:nth-child(1) a .bullet span,
+#wizard[data-step="6"] .steps li:nth-child(2) a .bullet span,
+#wizard[data-step="6"] .steps li:nth-child(3) a .bullet span,
+#wizard[data-step="6"] .steps li:nth-child(4) a .bullet span,
+#wizard[data-step="6"] .steps li:nth-child(5) a .bullet span {
+    opacity: 0;
+}
+#wizard[data-step="2"] .steps li:nth-child(1) a .bullet i.material-icons,
+#wizard[data-step="3"] .steps li:nth-child(1) a .bullet i.material-icons,
+#wizard[data-step="3"] .steps li:nth-child(2) a .bullet i.material-icons,
+#wizard[data-step="4"] .steps li:nth-child(1) a .bullet i.material-icons,
+#wizard[data-step="4"] .steps li:nth-child(2) a .bullet i.material-icons,
+#wizard[data-step="4"] .steps li:nth-child(3) a .bullet i.material-icons,
+#wizard[data-step="5"] .steps li:nth-child(1) a .bullet i.material-icons,
+#wizard[data-step="5"] .steps li:nth-child(2) a .bullet i.material-icons,
+#wizard[data-step="5"] .steps li:nth-child(3) a .bullet i.material-icons,
+#wizard[data-step="5"] .steps li:nth-child(4) a .bullet i.material-icons,
+#wizard[data-step="6"] .steps li:nth-child(1) a .bullet i.material-icons,
+#wizard[data-step="6"] .steps li:nth-child(2) a .bullet i.material-icons,
+#wizard[data-step="6"] .steps li:nth-child(3) a .bullet i.material-icons,
+#wizard[data-step="6"] .steps li:nth-child(4) a .bullet i.material-icons,
+#wizard[data-step="6"] .steps li:nth-child(5) a .bullet i.material-icons {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}
+#wizard[data-total-steps="2"] .steps li {
+    width: 50%;
+}
+#wizard[data-total-steps="2"] .steps::after {
+    left: 24.5%;
+}
+#wizard[data-total-steps="2"][data-step="2"] .steps::after {
+    width: 50%;
+}
+#wizard[data-total-steps="3"] .steps li {
+    width: 33.3%;
+}
+#wizard[data-total-steps="3"] .steps::after {
+    left: 16%;
+}
+#wizard[data-total-steps="3"][data-step="2"] .steps::after {
+    width: 34%;
+}
+#wizard[data-total-steps="3"][data-step="3"] .steps::after {
+    width: 68%;
+}
+#wizard[data-total-steps="4"] .steps li {
+    width: 25%;
+}
+#wizard[data-total-steps="4"] .steps::after {
+    left: 12%;
+}
+#wizard[data-total-steps="4"][data-step="2"] .steps::after {
+    width: 25%;
+}
+#wizard[data-total-steps="4"][data-step="3"] .steps::after {
+    width: 50.5%;
+}
+#wizard[data-total-steps="4"][data-step="4"] .steps::after {
+    width: 75.5%;
+}
+#wizard[data-total-steps="5"] .steps li {
+    width: 20%;
+}
+#wizard[data-total-steps="5"] .steps::after {
+    left: 9.5%;
+}
+#wizard[data-total-steps="5"][data-step="2"] .steps::after {
+    width: 20.5%;
+}
+#wizard[data-total-steps="5"][data-step="3"] .steps::after {
+    width: 41%;
+}
+#wizard[data-total-steps="5"][data-step="4"] .steps::after {
+    width: 61%;
+}
+#wizard[data-total-steps="5"][data-step="5"] .steps::after {
+    width: 81%;
+}
+#wizard[data-total-steps="6"] .steps li {
+    width: 16.6%;
+}
+#wizard[data-total-steps="6"] .steps::after {
+    left: 8%;
+}
+#wizard[data-total-steps="6"][data-step="2"] .steps::after {
+    width: 17%;
+}
+#wizard[data-total-steps="6"][data-step="3"] .steps::after {
+    width: 34%;
+}
+#wizard[data-total-steps="6"][data-step="4"] .steps::after {
+    width: 51%;
+}
+#wizard[data-total-steps="6"][data-step="5"] .steps::after {
+    width: 68%;
+}
+#wizard[data-total-steps="6"][data-step="6"] .steps::after {
+    width: 84%;
+}
+#wizard .steps {
+    position: relative;
+}
+#wizard .steps::after {
+    content: "";
+    background-color: #007bff;
+    display: block;
+    position: absolute;
+    height: 4px;
+    top: 18px;
+    transition: width ease-in-out 0.3s 0s;
+    width: 0;
+    z-index: 50;
+}
+#wizard .steps li {
+    position: relative;
+    text-align: center;
+}
+#wizard .steps li:not(:last-child)::before {
+    background-color: #DEDEDE;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    top: 18px;
+    width: 100%;
+    z-index: 50;
+}
+#wizard .steps li:not(:last-child)::after {
+    width: 0;
+    background-color: #007bff;
+    transition: width ease-in-out 0.3s 0s;
+}
+#wizard .steps li a {
+    display: inline-block;
+    text-decoration: none;
+}
+#wizard .steps li a .bullet {
+    align-items: center;
+    background-color: #FFF;
+    border: 2px solid #DEDEDE;
+    border-radius: 200px;
+    color: #007bff;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    position: relative;
+    z-index: 100;
+    transition: border-color linear 0.3s, background-color linear 0.3s, color linear 0.3s;
+}
+#wizard .steps li a .bullet span {
+    opacity: 1;
+    transition: opacity linear 0.3s, transform cubic-bezier(0, 1.8, 1, 1.8) 0.3s;
+}
+#wizard .steps li a .bullet i.material-icons {
+    left: 50%;
+    margin: -0.5em 0 0 -0.5em;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: scale(0.5) rotate(-30deg);
+    transition: opacity ease-out 0.05s, transform cubic-bezier(0, 1.8, 1, 1.8) 0.3s;
+}
+#wizard .steps li a .title {
+    display: inline-block;
+    margin-top: 4px;
+}
+#wizard .steps li a:hover .bullet {
+    background-color: #DEDEDE;
+}
+#wizard .steps li a:hover .bullet span {
+    transform: scale(1.3);
+}
+#wizard .card {
+    border: none;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08), 0 3px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow-x: hidden;
+    z-index: 10;
+}
+#wizard .card .controls {
+
+}
+#wizard #wizard-next span:last-child {
+    display: none;
+}
+#wizard[data-total-steps="2"][data-step="2"] #wizard-next span:first-child,
+#wizard[data-total-steps="3"][data-step="3"] #wizard-next span:first-child,
+#wizard[data-total-steps="4"][data-step="4"] #wizard-next span:first-child,
+#wizard[data-total-steps="5"][data-step="5"] #wizard-next span:first-child,
+#wizard[data-total-steps="6"][data-step="6"] #wizard-next span:first-child {
+    display: none;
+}
+#wizard[data-total-steps="2"][data-step="2"] #wizard-next span:last-child,
+#wizard[data-total-steps="3"][data-step="3"] #wizard-next span:last-child,
+#wizard[data-total-steps="4"][data-step="4"] #wizard-next span:last-child,
+#wizard[data-total-steps="5"][data-step="5"] #wizard-next span:last-child,
+#wizard[data-total-steps="6"][data-step="6"] #wizard-next span:last-child {
+    display: block;
+}
+#wizard[data-step="1"] #wizard-prev {
+    display: none;
+}
+.progress-bar {
+    background: transparent;
+    height: 4px;
+    left: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 0;
+    z-index: 20;
+}
+.progress-bar::before {
+    background-color: #007bff;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 20;
+}
+.progress-bar::after {
+    content: "";
+    display: block;
+    height: 0;
+    border-right: solid 640px #00FBD7;
+    border-top: solid 4px transparent;
+    border-bottom: solid 4px transparent;
+    border-left-color: solid 0 transparent;
+    filter: blur(2px);
+    margin-top: -4px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transition: none;
+    width: 0;
+    z-index: 10;
+}
+.progress-bar.play {
+    animation: fakeProgressBar ease-in-out 1.3s;
+}
+.progress-bar.play::after {
+    right: -4px;
+}
+.rounded-lg {
+    border-radius: 24px;
+}
+
+
+.style__select__quote{}
+.style__select__quote label{
+    color: #000;
+    font-size: 17px;
+    margin: 0 0 5px 0;
+}
+.style__select__quote select{
+    height: 50px;
+}
+
+.Additional_services label{
+    color: #000;
+}
+
+.nav-words .nav-tabs{
+    border: 0;
+}
+
+
+.text-words:focus{
+    background: #f5f5f5;
+}
+
+.nav-words .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link{
+    border: 0;
+    border-radius: 7px;
+    background: #ddd;
+    margin: 0 2px;
+    padding: 15px 20px;
+    font-size: 17px;
+    color: #000;
+}
+
+.nav-words .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: #faab43;
+    color: #fff;
+}
+
+.total_cost{
+    position: relative;
+    text-align: center;
+}
+
+.bg_words{
+    background: #0B5355;
+    padding: 30px;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.des_block_words{
+
+}
+.des_block_words i{
+    color: #E0F1DF;
+    font-size: 50px;
+    margin: 15px 0;
+}
+.des_block_words h4{
+    color: #fff;
+    font-size: 17px;
+    font-weight: normal;
+    margin: 10px 0 10px 0;
+    padding: 0 40px;
+}
+
+.style__data__quote input{
+    border: 1px solid #ddd;
+}
+.style__data__quote label{
+    color: #000;
+    font-size: 17px;
+    margin: 0 0 10px 0;
+}
+
+.icon-ch{
+    font-size: 100px;
+    color: #faab43;
+    margin: 30px 0 50px 0;
+}
+
+.total_cost h3{
+    font-size: 42px;
+}
+.total_cost p{
+    font-size: 12px;
+}
+.total_cost strong{
+    font-size: 70px;
+    margin: 50px 0 50px 0;
+    display: block;
+    line-height: normal;
+}
+.total_cost strong b{
+
+}
+
+@keyframes bulletNumbers {
+0,
+100% {
+    transform: scale(1);
+}
+50% {
+    transform: scale(1.4);
+}
+}
+@keyframes fakeProgressBar {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
