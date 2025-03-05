@@ -1,9 +1,16 @@
 body{
 
 }
-
+.ltr{
+    text-align: left !important;
+    direction: ltr !important;
+}
 .text-main{
     color: #faab43;
+}
+
+.bg-main{
+    background: #faab43 !important;
 }
 
 .bg-main2{
@@ -7424,10 +7431,11 @@ button.close-search i {
 .desc-sector{
     height: 500px;
     overflow: hidden;
-    background: #ddd;
+    background: #0E4747;
     padding: 100px 60px 0 100px;
 }
-
+.desc-sector h2{color: #d3ffe6;}
+.desc-sector p{color:#fff;}
 .icon_img_sector{
     background: #ffffff;
     border: 6px solid #e3e3e3;
@@ -7455,7 +7463,7 @@ button.close-search i {
 
 .img_sidebar_sector{
     width: 100%;
-    margin: 25px 0 0 0;
+    margin: 100px 0 0 0;
     border-radius: 15px;
 }
 .sidebar_sector.NewClassSector{
@@ -7481,9 +7489,9 @@ button.close-search i {
 #wizard[data-step="4"] .steps li:nth-child(4) a .bullet,
 #wizard[data-step="5"] .steps li:nth-child(5) a .bullet,
 #wizard[data-step="6"] .steps li:nth-child(6) a .bullet {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: #FFF;
+    background-color: #0B5355;
+    border-color: #0B5355;
+    color: #beffd9;
     transition-delay: 0.3s;
     font-weight: bold;
 }
@@ -7604,8 +7612,8 @@ button.close-search i {
 #wizard[data-step="6"] .steps li:nth-child(3) a .bullet,
 #wizard[data-step="6"] .steps li:nth-child(4) a .bullet,
 #wizard[data-step="6"] .steps li:nth-child(5) a .bullet {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #0B5355;
+    border-color: #0B5355;
     color: #FFF;
 }
 #wizard[data-step="2"] .steps li:nth-child(1) a .bullet span,
@@ -7723,7 +7731,7 @@ button.close-search i {
 }
 #wizard .steps::after {
     content: "";
-    background-color: #007bff;
+    background-color: #0B5355;
     display: block;
     position: absolute;
     height: 4px;
@@ -7777,6 +7785,7 @@ button.close-search i {
     transition: opacity linear 0.3s, transform cubic-bezier(0, 1.8, 1, 1.8) 0.3s;
 }
 #wizard .steps li a .bullet i.material-icons {
+    color: #beffd9;
     left: 50%;
     margin: -0.5em 0 0 -0.5em;
     opacity: 0;
@@ -7872,6 +7881,9 @@ button.close-search i {
     border-radius: 24px;
 }
 
+.btn_step{
+
+}
 
 .style__select__quote{}
 .style__select__quote label{
@@ -7927,12 +7939,12 @@ button.close-search i {
 
 }
 .des_block_words i{
-    color: #E0F1DF;
+    color: #beffd9;
     font-size: 50px;
     margin: 15px 0;
 }
 .des_block_words h4{
-    color: #fff;
+    color: #beffd9;
     font-size: 17px;
     font-weight: normal;
     margin: 10px 0 10px 0;

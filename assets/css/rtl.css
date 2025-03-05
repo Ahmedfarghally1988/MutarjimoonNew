@@ -1,0 +1,365 @@
+
+
+*,
+html,
+body {
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+p ,a{
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Sans Arabic';
+    font-weight: 600;
+    font-style: normal;
+}
+
+.rtl{
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+.topber_right_social.style_two {
+    justify-content: left;
+}
+
+
+.me-0 {
+    margin-left: 0 !important;
+}
+
+.me-1 {
+    margin-left: 0.25rem !important;
+}
+
+.me-2 {
+    margin-left: 0.5rem !important;
+}
+
+.me-3 {
+    margin-left: 1rem !important;
+}
+
+.me-4 {
+    margin-left: 1.5rem !important;
+}
+
+.me-5 {
+    margin-left: 3rem !important;
+}
+
+.ms-0 {
+    margin-right: 0 !important;
+}
+
+.ms-1 {
+    margin-right: 0.25rem !important;
+}
+
+.ms-2 {
+    margin-right: 0.5rem !important;
+}
+
+.ms-3 {
+    margin-right: 1rem !important;
+}
+
+.ms-4 {
+    margin-right: 1.5rem !important;
+}
+
+.ms-5 {
+    margin-right: 3rem !important;
+}
+
+.ms-auto {
+    margin-right: auto !important;
+}
+
+.pe-0 {
+    padding-left: 0 !important;
+}
+
+.pe-1 {
+    padding-left: 0.25rem !important;
+}
+
+.pe-2 {
+    padding-left: 0.5rem !important;
+}
+
+.pe-3 {
+    padding-left: 1rem !important;
+}
+
+.pe-4 {
+    padding-left: 1.5rem !important;
+}
+
+.pe-5 {
+    padding-left: 3rem !important;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+.ps-0 {
+    padding-right: 0 !important;
+}
+
+.ps-1 {
+    padding-right: 0.25rem !important;
+}
+
+.ps-2 {
+    padding-right: 0.5rem !important;
+}
+
+.ps-3 {
+    padding-right: 1rem !important;
+}
+
+.ps-4 {
+    padding-right: 1.5rem !important;
+}
+
+.ps-5 {
+    padding-right: 3rem !important;
+}
+
+.header-logo{
+    text-align: right;
+}
+.topber_area.style_two .header-address-info span i {
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+.bi-arrow-right::before {
+    content: "\f12f";
+}
+.flaticon-right-arrow:before {
+    content: "\f127";
+}
+.hero_btn a i {
+    margin-left: 0;
+    margin-right: 10px;
+    float: left;
+    transform: rotate(0deg);
+}
+.header-button.style_two a i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+.hero_btn {
+    margin-right: 0;
+    margin-left: 30px;
+    direction: ltr;
+}
+
+.word-slider:before {
+    animation: slideInRight 5s infinite;
+}
+.hero_content h1 {
+    line-height: 90px;
+}
+.hero_btn a{
+    font-size: 19px;
+}
+.about_btn.style_two {
+    margin-left: 0;
+    margin-right: 30px;
+    direction: ltr;
+}
+.about_btn.style_two a i {
+    margin-left: 10px;
+    margin-right: 0;
+    float: left;
+}
+.counter_title {
+    margin-left: 0;
+    margin-right: 40px;
+}
+.counter_title:before {
+    right: -22px;
+    left: auto;
+}
+.counter_title h5 {
+    text-align: right;
+}
+
+.service_single_item.style_four .service_content{
+    direction: rtl;
+    text-align: right;
+    padding: 32px 30px 24px 0;
+}
+.service_single_item.style_two .service_btn {
+    left: 20px;
+    right: auto;
+}
+.service_single_item.style_two .service_btn a i{
+    transform: rotate(52deg);
+}
+.contact_main_info .call-do-action-info {
+    justify-content: right;
+}
+.contact_main_info .call-do-social_icon  i {
+    margin: 0 0 0 20px;
+}
+.blog-content {
+    padding: 35px 30px 20px 30px;
+}
+.meta-blog {
+    direction: rtl;
+}
+.meta-blog p {
+    text-align: right;
+}
+.meta-blog p span {
+    margin: 0 0 0 30px;
+}
+.meta-blog p span:before {
+    left: -26px;
+    right: auto;
+}
+.blog-title{
+    text-align: right;
+}
+.blog_btn{
+    direction: ltr;
+    text-align: right;
+}
+.mc4wp-form-fields .mailchimp-form button {
+    border-radius: 30px 5px 5px 30px;
+}
+.mc4wp-form-fields .mailchimp-form button:before {
+    left: auto;
+    right: 0;
+    border-radius: 35px 0 0 35px;
+}
+.footer-bottom-menu {
+    text-align: left;
+}
+.call_info{text-align: right}
+.topber_area.style_two:before {
+    right: -24px;
+    left: auto;
+    transform: skew(34deg);
+}
+
+.border-start {
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    border-left: none !important;
+}
+
+.border-end {
+    border-left: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    border-right: none !important;
+}
+.nav-tabs-menu li button.active:before {
+    right: auto;
+    left: -15px;
+    transform: rotate(180deg);
+}
+.nav-tabs-menu {
+    border-right: 0;
+    border-left: 1px solid #ddd;
+}
+.header-menu ul .sub_menu li a {
+    text-align: right;
+}
+.search-popup .form-group input[type="submit"], .search-popup .form-group button {
+    right: auto;
+    left: 30px;
+}
+
+.header-menu ul li a {
+    font-size: 15px;
+    font-weight: 600;
+}
+.header-menu {
+    justify-content: left;
+}
+
+.about_thumb {
+    text-align: right;
+}
+
+section.about_area.style_four .about_play.style_three {
+    right: 0;
+}
+.counter_title h5 {
+    font-size: 19px;
+}
+
+.fa-arrow-right:before {
+    content: "\f060";
+}
+.call_area.style_three .call-do-action-info {
+    justify-content: right;
+}
+.footer-widget-menu ul li a {
+    margin-right: -15px;
+    margin-left: 0;
+}
+.footer-widget-menu ul li a:hover {
+    margin-right: .0;
+}
+.feature_item.style_two {
+    text-align: right;
+}
+.section_title.style_three {
+    text-align: right;
+}
+
+@media screen and (max-width:1024px) {
+
+    .service_single_item.style_four .service_content {
+        padding: 10px;
+    }
+
+    .topBarMobile div a{
+        margin: 0 !important;
+        padding-left: 9px !important;
+    }
+    .topBarMobile p a{
+        font-size: 12px;
+        margin: 0 5px !important;
+        padding: 0 !important;
+    }
+    .hero_content{
+        text-align: center !important;
+    }
+    .hero_content h1 {
+        line-height: 60px;
+    }
+    .mean-container a.meanmenu-reveal {
+        float: left;
+    }
+    .mean-container .mean-bar::before {
+        right: 10px;
+        left: auto;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        text-align: left;
+    }
+    .mean-container .mean-nav ul li a{
+        text-align: right;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+}
