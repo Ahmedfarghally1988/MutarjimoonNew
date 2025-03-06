@@ -325,6 +325,130 @@ section.about_area.style_four .about_play.style_three {
     text-align: right;
 }
 
+section.contact_area.inner_section{
+    text-align: right;
+}
+
+.block__career {
+    text-align: right;
+}
+
+.section_title{
+    text-align: right;
+}
+
+.block_contact_left {
+    text-align: right;
+}
+.contact-form{
+    text-align: right;
+}
+
+.breadcumb-content-ebook{
+    text-align: right;
+}
+.content_ebooks {
+    text-align: right;
+}
+.content_ebooks ul {
+    padding: 0 15px 0 0;
+}
+#wizard .steps li:not(:last-child)::before {
+    left: 0;
+    right: 50%;
+}
+
+#wizard[data-total-steps="3"] .steps::after {
+    left: auto;
+    right: 16%;
+}
+#wizard-content{
+    text-align: right;
+}
+.style__select__quote select {
+    text-align: left;
+}
+.Additional_services .form-check-input{
+    float: right;
+    margin: 5px 0 0 0;
+}
+.Additional_services label {
+    padding: 0 10px 0 0;
+}
+.img_tit_sector {
+    margin: 0 0 5px 10px;
+}
+section.feature_area.inner_page {
+    text-align: right;
+}
+.icon_img_sector {
+    left: auto;
+    right: -50px;
+}
+.desc-sector {
+    padding: 100px 100px 0 60px;
+    text-align: right;
+}
+.marquee {
+    direction: ltr;
+}
+
+.sidebar_blog{
+    text-align: right;
+}
+.recent-post-text span:before {
+    left: auto;
+    right: 0;
+}
+.recent-post-text span {
+    padding: 0 20px 0 0;
+}
+.mc4wp-form-fields input[type="email"] {
+    margin-left: 20px;
+    margin-right: 0;
+}
+.accordion-button::after {
+    margin-right: auto;
+    margin-left: 0;
+}
+.content--blog {
+    text-align: right;
+}
+.sidebar_box.style_two {
+    padding: 0 15px 0 5px;
+    border-right: 6px solid #faab43;
+    border-left: 0;
+}
+.img-block-view {
+    right: 27px;
+    left: 0;
+}
+.proconsul_btn.right_btn {
+    text-align: left;
+}
+.proconsul_btn.right_btn a {
+    direction: ltr;
+}
+.social_icon_share {
+    text-align: right;
+}
+.block_view_jobs {
+    text-align: right;
+}
+.details_job ul {
+    padding: 0 20px 0 0;
+}
+
+.sidebar_box.style_two.sidebar_service.sidebar_service_single {
+    text-align: right;
+}
+.list_view_service {
+    padding: 15px 20px 0 0;
+}
+.viewPageService{
+    text-align: right;
+}
+
 @media screen and (max-width:1024px) {
 
     .service_single_item.style_four .service_content {
