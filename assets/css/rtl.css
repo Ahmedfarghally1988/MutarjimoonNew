@@ -361,5 +361,11 @@ section.about_area.style_four .about_play.style_three {
         font-weight: 500;
         font-size: 16px;
     }
+    .counter_title h5 {
+        text-align: center;
+    }
+    .counter_title {
+        margin-right: 0;
+    }
 
 }
