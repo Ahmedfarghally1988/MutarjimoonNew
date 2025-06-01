@@ -274,27 +274,27 @@ $(function() {
     // Service list Active
     $('.service_list2').owlCarousel({
         loop: true,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        dots: true,
-        margin: 30,
+        autoplay: false,
+        autoplayTimeout: 1000,
+        dots: false,
+        margin: 0,
         nav: false,
         navText: ["<i class='bi bi-arrow-left''></i>", "<i class='bi bi-arrow-right''></i>"],
         responsive: {
             0: {
-                items: 1
+                items: 3
             },
             768: {
-                items: 2
+                items: 3
             },
             992: {
-                items: 3
+                items: 6
             },
             1000: {
-                items: 3
+                items: 7
             },
             1920: {
-                items: 3
+                items: 7
             }
         }
     })

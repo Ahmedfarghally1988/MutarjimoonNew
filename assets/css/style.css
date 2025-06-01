@@ -342,9 +342,10 @@ h2.brand_title:before {
     border: 1px solid #ddd;
     padding: 10px;
     display: flex;
-    height: 90px;
+    height: 100px;
     margin: 0 10px;
     border-radius: 5px;
+    align-items: center;
 }
 
 .brand-thumb img {
