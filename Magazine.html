@@ -1,219 +1,628 @@
-<!doctype html>
-<html lang="en-US">
-<head>    
-    <meta charset="utf-8">    
+<!DOCTYPE HTML>
+<html lang="en-US" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title> Mutarjimoon :: Magazine </title>
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>test</title>   	
-	
-	<style>
-		body {
-  margin: 0;
-  background-color: #ffecc6;
-}
-* {
-  box-sizing: border-box;
-}
-.book-section {
-  height: 100vh;
-  width: 100%;
-  padding: 40px 0;
-  text-align: center;
-}
-.book-section > .container {
-    height: 75vh;
-    width: 65%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 2%;
-  margin-bottom: 30px;
-  perspective: 1200px;
-}
-.container > .right {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  transition: 0.7s ease-in-out;
-  transform-style: preserve-3d;
-}
-.book-section > .container > .right {
-  right: 0;
-  transform-origin: left;
-  border-radius: 10px 0 0 10px;
-}
-.right > figure.front,
-.right > figure.back {
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-size: 200%;
-  background-repeat: no-repeat;
-  backface-visibility: hidden;
-  background-color: white;
-  overflow: hidden;
-}
-.right > figure.front {
-  background-position: right;
-  border-radius: 0 10px 10px 0;
-  box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2);
-}
-.right > figure.back {
-  background-position: left;
-  border-radius: 10px 0 0 10px;
-  box-shadow: -2px 2px 15px -2px rgba(0, 0, 0, 0.2);
-  transform: rotateY(180deg);
-}
-.flip {
-  transform: rotateY(-180deg);
-}
-.flip::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  border-radius: 0 10px 10px 0;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-.book-section > button {
-  border: 2px solid #ef9f00;
-  background-color: transparent;
-  color: #ef9f00;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-  transition: 0.3s ease-in-out;
-}
-.book-section > button:focus,
-.book-section > button:active {
-  outline: none;
-}
-.book-section > p {
-  color: rgba(0, 0, 0, 0.7);
-  font-family: calibri;
-  font-size: 24px;
-}
-.book-section > p > a {
-  text-decoration: none;
-  color: #ef9f00;
-}
-.book-section > button:hover {
-  background-color: #ef9f00;
-  color: #fff;
-}
-.front#cover,
-.back#back-cover {
-  background-color: #ffcb63;
-  font-family: calibri;
-  text-align: left;
-  padding: 0 30px;
-}
-.front#cover h1 {
-  color: #fff;
-}
-.front#cover p {
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 14px;
-}
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="assets/images/favicon.png">
+	<!-- bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="all">
+	<!-- carousel CSS -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css" media="all">
+	<!-- animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/animate-2.css" type="text/css" media="all">
+	<!-- animated-text CSS -->
+	<link rel="stylesheet" href="assets/css/animated-text.css" type="text/css" media="all">
+	<!-- font-awesome CSS -->
+	<link rel="stylesheet" href="assets/css/all.min.css" type="text/css" media="all">
+	<!-- theme-default CSS -->
+	<link rel="stylesheet" href="assets/css/theme-default.css" type="text/css" media="all">
+	<!-- meanmenu CSS -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css" type="text/css" media="all">
+	<!-- transitions CSS -->
+	<link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css" media="all">
+	<!-- venobox CSS -->
+	<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="all">
+	<!-- flaticon -->
+	<link rel="stylesheet" href="assets/css/bootstrap-icons.css" type="text/css" media="all">
+	<!-- bootstrap icons -->
+	<link rel="stylesheet" href="assets/css/flaticon.css" type="text/css" media="all">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+	<!-- responsive CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css" type="text/css" media="all">
+	<!-- Coustom Animation CSS -->
+	<link rel="stylesheet" href="assets/css/coustom-animation.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/scroll-up.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/fonts/stylesheet.css" type="text/css" media="all">
 
-	</style>
-	
+<!--	<link rel="stylesheet" href="assets/fonts_Ar/stylesheet.css" type="text/css" media="all">-->
+<!--	<link rel="stylesheet" href="assets/css/rtl.css" type="text/css" media="all">-->
+<!--	-->
 </head>
 
 <body>
 
-<div class="book-section">
-  <div class="container">
-    <div class="right">
-      <figure class="back" id="back-cover"></figure>
-      <figure class="front" style="
-              background-image: url();
-            "></figure>
-    </div>
-    <div class="right">
-      <figure class="back" style="
-              background-image: url();
-            "></figure>
-      <figure class="front" style="
-              background-image: url();
-            "></figure>
-    </div>
-    <div class="right">
-      <figure class="back" style="
-              background-image: url();
-            "></figure>
-      <figure class="front" style="
-              background-image: url();
-            "></figure>
-    </div>
+<!-- loader -->
+<div class="loader-wrapper">
+	<div class="loader">
+		<img src="assets/images/logoweb2025.gif" height="100">
+	</div>
+	<div class="loder-section left-section"></div>
+	<div class="loder-section right-section"></div>
+</div>
 
-    <div class="right">
-      <figure class="back" style="
-              background-image: url();
-            "></figure>
-      <figure class="front" id="cover">
-        <h1>Book Title</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Adipisci, modi.
-        </p>
-      </figure>
-    </div>
-  </div>
-  <button onclick="turnLeft()">Prev</button>
-  <button onclick="turnRight()">Next</button>
-  <br />
+<div class="topber_area style_two">
+	<div class="container">
+		<div class="row topber_upper align-items-center d-flex">
+			<div class="col-lg-8">
+				<div class="header-address-info d-flex gap-4">
+					<p> <span><i class="bi bi-envelope"></i></span>  info@mutrjimoon.com </p>
+					<p> <span class="right_info"><i class="fas fa-phone-alt"></i></span> +2 010 6592515 </p>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<!--header top address-->
+				<div class="topber_right_social style_two">
+					<h2>FOLLOW US :</h2>
+					<ul class="top_header_social">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	</div>
 </div>
 
 
+<div class="advisar-header-area style_two style_three" id="sticky-header" >
+	<div class="container">
+		<div class="row align-items-center position-relative">
+			<div class="col-lg-2">
+				<div class="header-logo">
+					<a class="active_header" href="#"><img src="assets/images/logo.png" height="50" alt="logo"></a>
+					<a class="active_sticky" href="#"><img src="assets/images/logo.png" height="50" alt="logo"></a>
+				</div>
+			</div>
+			<div class="col-lg-10">
+				<div class="header-menu">
+					<ul class="nav_scroll">
+						<li><a href="#">Home</a></li>
+						<li class="megamenu"><a href="#"> Services <span><i class="fas fa-angle-down"></i></span></a>
+							<ul class="sub_menu">
+								<div class="row">
+									<div class="col-md-3 col-lg-3">
+										<ul class="nav nav-tabs nav-tabs-menu" id="myTab" role="tablist">
+											<li class="nav-item" role="presentation">
+												<button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">  <img src="assets/images/main-home/Asset4.png" class="mx-2" height="24">  Language Services</button>
+											</li>
+											<li class="nav-item" role="presentation">
+												<button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"> <img src="assets/images/main-home/Asset12.png" class="mx-2" height="24"> Marketing Services</button>
+											</li>
+										</ul>
+									</div>
+									<div class="col-md-9 col-lg-9">
+										<div class="tab-content" id="myTabContent">
+											<div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+												<ul class="menu_tabs">
+													<li> <a href="#"> <img src="assets/images/main-home/Asset6.png" class="mx-2" height="24">  Editing  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset8.png" class="mx-2" height="24">  DTP  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset10.png" class="mx-2" height="24">  Subtitling  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset11.png" class="mx-2" height="24">  Transcription  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset5.png" class="mx-2" height="24">  language Consulting  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset2.png" class="mx-2" height="24">  Translation  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset3.png" class="mx-2" height="24">  Interpretation  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset9.png" class="mx-2" height="24">  MTPE  </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset7.png" class="mx-2" height="24">  Proofreading  </a> </li>
+												</ul>
+											</div>
+											<div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+												<ul class="menu_tabs">
+													<li> <a href="#"> <img src="assets/images/main-home/Asset12.png" class="mx-2" height="24">   Digital Marketing </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset15.png" class="mx-2" height="24">   Media production </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset14.png" class="mx-2" height="24">   Multilingual content creation </a> </li>
+													<li> <a href="#"> <img src="assets/images/main-home/Asset16.png" class="mx-2" height="24">   Conference and Event Management </a> </li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</ul>
+						</li>
+						<li>
+							<a href="#"> Sectors <span><i class="fas fa-angle-down"></i></span></a>
+							<ul class="sub_menu">
+								<li><a href="#">  <i class="fa fa-globe fa-xs"></i>  Marketing & Media</a></li>
+								<li><a href="#">  <i class="fa fa-globe fa-xs"></i> Consultation </a></li>
+								<li><a href="#">  <i class="fa fa-globe fa-xs"></i> Literary & Creative </a></li>
+							</ul>
+						</li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Jobs</a></li>
+						<li>
+							<a href="#"> Resources <span><i class="fas fa-angle-down"></i></span></a>
+							<ul class="sub_menu">
+								<li><a href="#">  <i class="fa fa-globe fa-xs"></i> Blog</a></li>
+								<li><a href="#">  <i class="fa fa-globe fa-xs"></i> E-books </a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<div class="advisar_header-right">
+						<div class="header-search-button search-box-outer">
+							<a href="#"><i class="fas fa-search"></i></a>
+						</div>
+						<div class="lang me-3"> <a href="#" class="fw-bold"> عربي <img src="assets/images/saudi-arabia.png" height="24" />  </a> </div>
+						<div class="header-button style_two">
+							<a href="#">Get A Quote <i class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none">
+	<div class="topBarMobile">
+		<div class="d-flex justify-content-between p-2">
+			<p class="m-0">
+				<a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="me-2"><i class="fa-brands fa-twitter"></i></a>
+				<a href="#" class="me-2"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#" class="me-2"><i class="fab fa-linkedin-in"></i></a></a>
+			</p>
+
+			<div>
+				<a href="#" class=""> <i class="fa fa-phone-square"></i> 002 01065962515 </a>
+				<a href="#" class="fw-bold ps-3 ms-3 border-start">    عربي <img src="assets/images/saudi-arabia.png" height="24"> </a>
+			</div>
+
+		</div>
+	</div>
+	<div class="mobile-menu">
+		<nav class="header-menu">
+			<ul class="nav_scroll">
+
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Services</a>
+					<ul class="sub_menu">
+						<li><a href="#" class="ps-4"> <img src="assets/images/main-home/Asset4.png" class="mx-2" height="24"> Language Services</a>
+							<ul class="sub_menu_sub">
+								<li> <a href="#"> <img src="assets/images/main-home/Asset6.png" class="mx-2" height="24">  Editing  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset8.png" class="mx-2" height="24">  DTP  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset10.png" class="mx-2" height="24">  Subtitling  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset11.png" class="mx-2" height="24">  Transcription  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset5.png" class="mx-2" height="24">  language Consulting  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset2.png" class="mx-2" height="24">  Translation  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset3.png" class="mx-2" height="24">  Interpretation  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset9.png" class="mx-2" height="24">  MTPE  </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset7.png" class="mx-2" height="24">  Proofreading  </a> </li>
+							</ul>
+						</li>
+						<li><a href="#" class="ps-4"> <img src="assets/images/main-home/Asset12.png" class="mx-2" height="24"> Marketing Services</a>
+							<ul class="sub_menu_sub">
+								<li> <a href="#"> <img src="assets/images/main-home/Asset12.png" class="mx-2" height="24">   Digital Marketing </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset15.png" class="mx-2" height="24">   Media production </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset14.png" class="mx-2" height="24">   Multilingual content creation </a> </li>
+								<li> <a href="#"> <img src="assets/images/main-home/Asset16.png" class="mx-2" height="24">   Conference and Event Management </a> </li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li> <a href="#">Sectors</a>
+					<ul class="sub_menu">
+						<li><a href="#" class="ps-4"> <i class="fa fa-globe"></i> Marketing & Media </a></li>
+						<li><a href="#" class="ps-4"> <i class="fa fa-globe"></i> Consultation </a></li>
+						<li><a href="#" class="ps-4"> <i class="fa fa-globe"></i> Literary & Creative </a></li>
+					</ul>
+				</li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li> <a href="#">Resources</a>
+					<ul class="sub_menu">
+						<li><a href="#" class="ps-4"> <i class="fa fa-globe"></i> Blog </a></li>
+						<li><a href="#" class="ps-4"> <i class="fa fa-globe"></i> E-books </a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<div class="breadcumb-area d-flex" style="background-image: url('assets/images/bannaer2.jpg')">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-12 text-center">
+				<div class="breadcumb-content">
+					<div class="breadcumb-title">
+						<h1>All Magazines</h1>
+						<p>We offer a wide range of insightful guides and e-books that pave the way for individuals and businesses to success.</p>
+						<form class="search_blog position-relative">
+							<input type="search" class="form-control position-relative" placeholder="Search in our events">
+							<i class="fa fa-search"></i>
+						</form>
+					</div>
+					<ul class="mt-4">
+						<li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home </a></li>
+						<li class="rotates"><i class="bi bi-slash-lg"></i> Magazine </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="service_area style_two style_three inner_page pb-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<!-- feature item -->
+				<div class="service_single_item style_two style_three">
+					<div class="service_thumb">
+						<img src="assets/images/blog_3.png" alt="">
+						<div class="service_icon">
+							<a href="#"><img src="assets/images/tap.svg" alt="" class="w-25"></a>
+						</div>
+					</div>
+					<div class="service_content">
+						<div class="header-button style_two">
+							<a href="#" class="py-2 mb-2 rounded-2">Get It Now</a>
+						</div>
+						<h3 class="h-auto mb-2"><a href="#" class="fs-5">Sustainability Consulting for Business Planning</a></h3>
+					</div>
+					<div class="meta-blog d-flex justify-content-center gap-4 mb-0">
+						<p class="mb-0"> <i class="fa fa-user"></i> By Admin </p>
+						<p class="mb-0"> <i class="fa fa-calendar"></i> 20 Jan, 2024</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<!-- feature item -->
+				<div class="service_single_item style_two style_three">
+					<div class="service_thumb">
+						<img src="assets/images/blog_3.png" alt="">
+						<div class="service_icon">
+							<a href="#"><img src="assets/images/tap.svg" alt="" class="w-25"></a>
+						</div>
+					</div>
+					<div class="service_content">
+						<div class="header-button style_two">
+							<a href="#" class="py-2 mb-2 rounded-2">Get It Now</a>
+						</div>
+						<h3 class="h-auto mb-2"><a href="#" class="fs-5">Sustainability Consulting for Business Planning</a></h3>
+					</div>
+					<div class="meta-blog d-flex justify-content-center gap-4 mb-0">
+						<p class="mb-0"> <i class="fa fa-user"></i> By Admin </p>
+						<p class="mb-0"> <i class="fa fa-calendar"></i> 20 Jan, 2024</p>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<!-- feature item -->
+				<div class="service_single_item style_two style_three">
+					<div class="service_thumb">
+						<img src="assets/images/blog_3.png" alt="">
+						<div class="service_icon">
+							<a href="#"><img src="assets/images/tap.svg" alt="" class="w-25"></a>
+						</div>
+					</div>
+					<div class="service_content">
+						<div class="header-button style_two">
+							<a href="#" class="py-2 mb-2 rounded-2">Get It Now</a>
+						</div>
+						<h3 class="h-auto mb-2"><a href="#" class="fs-5">Sustainability Consulting for Business Planning</a></h3>
+					</div>
+					<div class="meta-blog d-flex justify-content-center gap-4 mb-0">
+						<p class="mb-0"> <i class="fa fa-user"></i> By Admin </p>
+						<p class="mb-0"> <i class="fa fa-calendar"></i> 20 Jan, 2024</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-center">
+				<nav aria-label="Page navigation example">
+					<ul class="pagination mt-5 mb-3">
+						<li class="page-item"><a class="page-link" href="#">Previous</a></li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item"><a class="page-link" href="#">Next</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="service_shape_three style_four rotate">
+		<img src="assets/images/main-home/service_shpe2.png" alt="">
+	</div>
+	<div class="service_shape_five bounce-animate2">
+		<img src="assets/images/main-home/choose_rotete.png" alt="">
+	</div>
+
+</section>
+
+
+<section class="contact_area inner_section">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-6">
+				<!-- contact form box -->
+				<div class="contact-form-box style_two">
+					<!-- section title -->
+					<div class="section_title style_three style_four text-center ">
+						<h4>CONTACT US</h4>
+						<h1>Get In Touch with Mutarjimoon</h1>
+					</div>
+					<form action="#" method="POST">
+						<div class="row">
+							<div class="col-lg-12 col-md-12">
+								<div class="form-box">
+									<input type="text" name="name" placeholder="Full Name">
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<div class="form-box">
+									<input type="email" name="name" placeholder="E-Mail">
+								</div>
+							</div>
+							<div class="col-lg-12 col-md-12">
+								<div class="form-box">
+									<input type="text" name="name" placeholder="Phone No">
+								</div>
+							</div>
+
+							<div class="col-lg-12 col-md-12">
+								<div class="form-box message">
+									<textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+								</div>
+							</div>
+							<div class="contact-form">
+								<button type="submit"> Send <i class="far fa-envelope ms-2"></i>  </button>
+							</div>
+						</div>
+					</form>
+					<div id="status"></div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="section_title">
+					<h4>Contact US</h4>
+					<h3>Unmatched Quality </h3>
+					<p> Our experts in language and marketing solutions committing to strict QA standards ensure high professionalism and creativity.  </p>
+				</div>
+				<div class="contact_main_info">
+					<div class="call-do-action-info">
+						<div class="call-do-social_icon">
+							<i class="fas fa-phone-alt"></i>
+						</div>
+						<div class="call_info">
+							<p>Phone:</p>
+							<h3>+201000322295</h3>
+						</div>
+					</div>
+					<div class="call-do-action-info">
+						<div class="call-do-social_icon">
+							<i class="fas fa-envelope-open"></i>
+						</div>
+						<div class="call_info">
+							<p> Email: </p>
+							<h3> info@mutrjimoon.com</h3>
+						</div>
+					</div>
+					<div class="call-do-action-info">
+						<div class="call-do-social_icon">
+							<i class="fas fa-map-marker-alt"></i>
+						</div>
+						<div class="call_info">
+							<p> Address: </p>
+							<h3> 42 Fariq Awal Ali Amer Street, 6th District, Nasr City, Cairo </h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="contact_shape2 dance2 d-none d-md-block">
+		<img src="assets/images/main-home/service_shpe2.png" alt="">
+	</div>
+</section>
+
+
+
+<footer>
+	<section class="call_area style_three">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-5 col-md-6">
+					<div class="call-do-action-info">
+						<div class="call_info">
+							<p>Subscribe to our newsletter</p>
+							<h3>Get rich insights on translation, localization and marketing. </h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7 col-md-6">
+					<div class="mc4wp-form-fields"><p class="mailchimp-form">
+						<input type="email" name="email" placeholder="Enter Your Email..." required="">
+						<button type="submit"> Subscribe</button></p></div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<section class="footer_area style_two style_three">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-widget-content style_two">
+						<div class="footer-widget-title">
+							<h4>Arabic Identity with global vision.</h4>
+						</div>
+						<p class="footer_desc">“Mutarjimoon” is a pioneering language and marketing solutions company enabling effective communication and global reach. </p>
+						<p> <strong>Direct contact:</strong> 42 Fariq Awal Ali Amer Street, 6th District, Nasr City, Cairo</p>
+						<p> <strong> E-Mail </strong>  info@mutrjimoon.com </p>
+						<ul class="top_header_social">
+							<li><a href="#" class="text-black"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="#" class="text-black"><i class="fa-brands fa-twitter"></i></a></li>
+							<li><a href="#" class="text-black"><i class="fa-brands fa-instagram"></i></a></li>
+							<li><a href="#" class="text-black"><i class="fab fa-linkedin-in"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6">
+					<div class="footer-widget-content style_two">
+						<div class="footer-widget-title">
+							<h4>Language Services</h4>
+						</div>
+						<div class="footer-widget-menu">
+							<ul>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Translation </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Localization </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Interpretation </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> MTPE </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Proofreading </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Editing </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-6">
+					<div class="footer-widget-content style_two">
+						<div class="footer-widget-title">
+							<h4>Sectors</h4>
+						</div>
+						<div class="footer-widget-menu">
+							<ul>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Consultation </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Literary & Creative </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Marketing & Media </a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="footer-widget-content style_two">
+						<div class="footer-widget-title">
+							<h4>Marketing Services</h4>
+						</div>
+						<div class="footer-widget-menu">
+							<ul>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Multilingual content creation</a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Conference and event management </a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Digital marketing</a></li>
+								<li><a href="#"><i aria-hidden="true" class="flaticon flaticon-right-arrow"></i> Media production </a></li>
+							</ul>
+							<a href="#" class="icon-iso mx-2"> <img src="assets/images/17100.png" height="75"> </a>
+							<a href="#" class="icon-iso mx-2"> <img src="assets/images/9001.png" height="75"> </a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row add-border style_two align-items-center">
+				<div class="col-md-7 order-one">
+					<div class="footer-bottom-content">
+						<div class="footer-bottom-content-copy style_two">
+							<p>Copyright © 2025 Ahmed Farghally. Designed &amp; Developed </p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 text-right">
+					<div class="footer-bottom-content">
+						<div class="footer-bottom-menu style_two">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_all_shape">
+			<div class="footer_shape_one bounce-animate">
+				<img src="assets/images/main-home/choose_rotete.png" height="250" alt="">
+			</div>
+			<div class="footer_shape_two bounce-animate d-none d-md-block">
+				<img src="assets/images/main-home/footer_shape.png"  height="250" alt="">
+			</div>
+		</div>
+	</section>
+</footer>
+
+
+<!-- Start Search Popup Section -->
+<div class="search-popup">
+	<button class="close-search style-two"><span class="flaticon-multiply"><i class="far fa-times-circle"></i></span></button>
+	<button class="close-search"><i class="bi bi-arrow-up"></i></button>
+	<form method="post" action="#">
+		<div class="form-group">
+			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</form>
+</div>
+
+<!-- Scroll Up-->
+<div class="prgoress_indicator active-progress">
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 212.78;"></path>
+	</svg>
+ </div>
+
+
+
+	
+	<!-- jquery js -->
+	<script src="assets/js/vendor/jquery-3.6.2.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- carousel js -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- counterup js -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- waypoints js -->
+	<script src="assets/js/waypoints.min.js"></script>
+	<!-- wow js -->
+	<script src="assets/js/wow.js"></script>
+	<!-- imagesloaded js -->
+	<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+	<!-- venobox js -->
+	<script src="venobox/venobox.js"></script>
+	<!--  animated-text js -->
+	<script src="assets/js/animated-text.js"></script>
+	<!-- venobox min js -->
+	<script src="venobox/venobox.min.js"></script>
+	<!-- isotope js -->
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<!-- jquery meanmenu js -->
+	<script src="assets/js/jquery.meanmenu.js"></script>
+	<!-- jquery scrollup js -->
+	<script src="assets/js/jquery.scrollUp.js"></script>
+	<!-- theme js -->
+	<script src="assets/js/theme.js"></script>
+	<!-- barfiller -->
+	<script src="assets/js/jquery.barfiller.js"></script>
+
 </body>
 
-<script>
-var right = document.getElementsByClassName("right");
-var si = right.length;
-var z = 1;
-turnRight();
-function turnRight() {
-  if (si >= 1) {
-    si--;
-  } else {
-    si = right.length - 1;
-    function sttmot(i) {
-      setTimeout(function () {
-        right[i].style.zIndex = "auto";
-      }, 300);
-    }
-    for (var i = 0; i < right.length; i++) {
-      right[i].className = "right";
-      sttmot(i);
-      z = 1;
-    }
-  }
-  right[si].classList.add("flip");
-  z++;
-  right[si].style.zIndex = z;
-}
-function turnLeft() {
-  if (si < right.length) {
-    si++;
-  } else {
-    si = 1;
-    for (var i = right.length - 1; i > 0; i--) {
-      right[i].classList.add("flip");
-      right[i].style.zIndex = right.length + 1 - i;
-    }
-  }
-  right[si - 1].className = "right";
-  setTimeout(function () {
-    right[si - 1].style.zIndex = "auto";
-  }, 350);
-}
-
-</script>
 </html>

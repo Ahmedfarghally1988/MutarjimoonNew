@@ -25,11 +25,16 @@ h6 {
     font-weight: 600;
     font-style: normal;
 }
+p,h1,h2,h3,h4,h5,h6,a{
+    direction: rtl;
+}
 
 .rtl{
     text-align: right !important;
     direction: rtl !important;
 }
+
+
 
 .topber_right_social.style_two {
     justify-content: left;
@@ -246,13 +251,19 @@ h6 {
     border-radius: 30px 5px 5px 30px;
 }
 .mc4wp-form-fields .mailchimp-form button:before {
-    left: auto;
+    border-radius: 35px 0 0  35px;
     right: 0;
-    border-radius: 35px 0 0 35px;
+    left: auto;
 }
 .footer-bottom-menu {
     text-align: left;
 }
+
+
+.sucribe .mailchimp-form {
+    direction: rtl !important;
+}
+
 .call_info{text-align: right}
 .topber_area.style_two:before {
     right: -24px;
@@ -299,7 +310,8 @@ h6 {
 }
 
 section.about_area.style_four .about_play.style_three {
-    right: 0;
+    left: 0;
+    right: auto;
 }
 .counter_title h5 {
     font-size: 19px;
@@ -366,7 +378,8 @@ section.contact_area.inner_section{
     text-align: right;
 }
 .style__select__quote select {
-    text-align: left;
+    text-align: right;
+    padding-right:15px;
 }
 .Additional_services .form-check-input{
     float: right;
@@ -404,7 +417,7 @@ section.feature_area.inner_page {
     padding: 0 20px 0 0;
 }
 .mc4wp-form-fields input[type="email"] {
-    margin-left: 20px;
+    margin-left: 0;
     margin-right: 0;
 }
 .accordion-button::after {
@@ -449,10 +462,96 @@ section.feature_area.inner_page {
     text-align: right;
 }
 
+.form-select{
+    background-position: left .75rem center;
+}
+.choose_thumb {
+    text-align: right;
+}
+.service_single_item.style_two .service_content h3 a {
+    font-size: 17px;
+}
+
+
+.counter_upper.bg-main2 .align-items-center{
+    direction: ltr;
+    padding: 0 20px;
+}
+.icon_ser{
+    margin-bottom: 25px;
+}
+.form-box input {
+    text-align: right;
+}
+
+.logo_mob {
+    left: auto;
+    right: 15px;
+}
+
+.accordion-button{
+    text-align: right;
+}
+.sidebar_box ul li{
+    padding-left: 0;
+    padding-right: 25px;
+}
+.sidebar_box ul li:before{
+    left: auto;
+    right: 0;
+}
+
+.hero_btn a ,
+.about_btn a{
+    direction: ltr;
+}
+.mailchimp-form {
+    direction: ltr !important;
+}
+
+
+.blog_btn a{
+    display: block;
+}
+
+.flags{
+    direction: ltr;
+}
+
+.mailchimp-form input{
+    text-align: right;
+    direction: rtl;
+}
+
 @media screen and (max-width:1024px) {
+
+    .list_about li {
+        text-align: right;
+        padding: 0 30px 0 0;
+    }
+    .list_about li i {
+        left: auto;
+        right: 0;
+        padding: 5px 0 0 0;
+    }
+    .hero_content h1 span{
+        width: 36%;
+    }
 
     .service_single_item.style_four .service_content {
         padding: 10px;
+    }
+    .about_thumb {
+        width: 100%;
+    }
+
+
+    .mc4wp-form-fields .mailchimp-form button {
+        padding: 14px 10px;
+        min-width: 100px;
+    }
+    .mc4wp-form-fields input[type="email"] {
+
     }
 
     .topBarMobile div a{
