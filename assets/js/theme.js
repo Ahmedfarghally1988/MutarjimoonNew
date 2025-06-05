@@ -35,9 +35,9 @@
      $(function () {
         $('body').addClass('loaded');
     });
-      
+
 //buddy all button
-$(function() {  
+$(function() {
     $('.animate_buton')
       .on('mouseenter', function(e) {
               var parentOffset = $(this).offset(),
@@ -245,36 +245,36 @@ $(function() {
         }
     })
      // Service list Active
-     $('.service_list').owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        dots: false,
-        margin: 30,
-        nav: true,
+     $('.languages_list').owlCarousel({
+         loop: true,
+         autoplay: true,
+         autoplayTimeout: 1000,
+         dots: false,
+         margin: 30,
+         nav: false,
         navText: ["<i class='bi bi-arrow-left''></i>", "<i class='bi bi-arrow-right''></i>"],
         responsive: {
             0: {
-                items: 1
+                items: 5
             },
             768: {
-                items: 2
+                items: 9
             },
             992: {
-                items: 2
+                items: 12
             },
             1000: {
-                items: 3
+                items: 15
             },
             1920: {
-                items: 3
+                items: 15
             }
         }
     })
     // Service list Active
     $('.service_list2').owlCarousel({
         loop: true,
-        autoplay: false,
+        autoplay: true,
         autoplayTimeout: 1000,
         dots: false,
         margin: 0,
@@ -282,10 +282,10 @@ $(function() {
         navText: ["<i class='bi bi-arrow-left''></i>", "<i class='bi bi-arrow-right''></i>"],
         responsive: {
             0: {
-                items: 3
+                items: 4
             },
             768: {
-                items: 3
+                items: 4
             },
             992: {
                 items: 6
@@ -493,7 +493,7 @@ $(function() {
 
 
     /*---------------------
-    WOW active js 
+    WOW active js
     --------------------- */
     new WOW().init();
     // counterUp
@@ -548,64 +548,64 @@ $(function() {
         infinigall: true
 
     });
-    
 
 
-    jQuery(document).ready(function ($) {
-        "use strict";
+    //
+    // jQuery(document).ready(function ($) {
+    //     "use strict";
+    //
+    //     // =======< accordion js >========
+    //     $(".accordion > li:eq(0) a").addClass("active").next().slideDown();
+    //     $('.accordion a').on('click', function (j) {
+    //         var dropDown = $(this).closest("li").find("p");
+    //
+    //         $(this).closest(".accordion").find("p").not(dropDown).slideUp();
+    //
+    //         if ($(this).hasClass("active")) {
+    //             $(this).removeClass("active");
+    //         } else {
+    //             $(this).closest(".accordion").find("a.active").removeClass("active");
+    //             $(this).addClass("active");
+    //         }
+    //
+    //         dropDown.stop(false, true).slideToggle();
+    //
+    //         j.preventDefault();
+    //     });
+    //
+    //
+    //      //=====< barfiller script >====
+    //      $('#bar1').barfiller({
+    //         duration: 7000
+    //     });
+    //     $('#bar2').barfiller({
+    //         duration: 7000
+    //     });
+    //
+    //     //======< Custom Tab >======
+    //     $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+    //
+    //     $(".tab ul.tabs li a").on("click", function (g) {
+    //         var tab = $(this).closest('.tab'),
+    //             index = $(this).closest('li').index();
+    //
+    //         tab.find('ul.tabs > li').removeClass('current');
+    //         $(this).closest('li').addClass('current');
+    //
+    //         tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+    //         tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+    //
+    //         g.preventDefault();
+    //     });
+    //
+    // });
 
-        // =======< accordion js >========
-        $(".accordion > li:eq(0) a").addClass("active").next().slideDown();
-        $('.accordion a').on('click', function (j) {
-            var dropDown = $(this).closest("li").find("p");
-
-            $(this).closest(".accordion").find("p").not(dropDown).slideUp();
-
-            if ($(this).hasClass("active")) {
-                $(this).removeClass("active");
-            } else {
-                $(this).closest(".accordion").find("a.active").removeClass("active");
-                $(this).addClass("active");
-            }
-
-            dropDown.stop(false, true).slideToggle();
-
-            j.preventDefault();
-        });
-
-
-         //=====< barfiller script >====
-         $('#bar1').barfiller({
-            duration: 7000
-        });
-        $('#bar2').barfiller({
-            duration: 7000
-        });
-
-        //======< Custom Tab >======
-        $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
-
-        $(".tab ul.tabs li a").on("click", function (g) {
-            var tab = $(this).closest('.tab'),
-                index = $(this).closest('li').index();
-
-            tab.find('ul.tabs > li').removeClass('current');
-            $(this).closest('li').addClass('current');
-
-            tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
-            tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
-
-            g.preventDefault();
-        });
-
-    });
-
-     // Team 
+     // Team
     $(".team-share").click(function(){
         $(this).siblings(".team-social-icon").toggleClass('active');
     });
 
-    
+
 
 
     if($('.prgoress_indicator path').length){
@@ -796,6 +796,16 @@ $(function() {
             }, 1300);
         }
     });
+
+
+    $( document ).ready(function() {
+        $('#exampleModal').modal('show');
+
+        // setTimeout(function() {
+        //     $('#exampleModal').modal('hide');
+        // }, 9000);
+    });
+
 
 })(jQuery);
 
