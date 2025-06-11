@@ -470,7 +470,7 @@
                     o = e.top;
                 this.element.classList.add("--simple"),
                     (this.copiedElement.style.cssText =
-                        "position: absolute; display: block; height: " + s + "px; left: " + n + "px; top: " + o + "px; width: " + i + "px; z-index: " + (this.render.getSettings().startZIndex + 1) + ";"),
+                        "position: absolute; display: block; height: " + s + "px; right: " + n + "px; top: " + o + "px; width: " + i + "px; z-index: " + (this.render.getSettings().startZIndex + 1) + ";"),
                     (this.element.style.cssText = "display: none");
             }
             clearSaved() {
