@@ -4344,41 +4344,34 @@ section.case-study-area {
 
 /*xl device min width*/
 @media screen and (max-width:1024px) {
-
-    .order--oneEvent{
-        order: -1;
+    .demo-block {
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+        margin-top: 110px;
+        border-radius: 15px;
+        box-shadow: 0 0 0;
+        background: transparent !important;
     }
-
-    .date_event{
-        border: 0;
-        font-size: 14px;
-        text-align: left;
-        position: absolute;
-        background: #fff;
-        height: 33px;
-        margin: 10px 0 0 15px;
-        padding: 5px 15px;
-        border-radius: 25px;
-    }
-    .date_event i {
-        display: inline;
-        margin: 0 5px 0 0;
-        font-size: 14px;
-    }
-    .date_event b {
-        display: inline;
-        font-size: 14px;
-        margin: 0 0 0 0;
-    }
-    .desc_event p {
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
+    .flip-book {
+        box-shadow: 0 0 0 !important;
+        border-radius: 15px;
         overflow: hidden;
     }
-
     .about_thumb {
         width: 100%;
+    }
+    .cookies-box {
+        padding: 30px 30px 20px 30px;
+    }
+    .cookies__title {
+        line-height: 25px;
+        font-size: 21px;
+    }
+    .cookies__btn {
+        padding: 10px 15px;
+    }
+    .cookies__text {
+        line-height: 20px;
     }
 
     .order_one_serv{

@@ -797,14 +797,39 @@ $(function() {
         }
     });
 
+    //
+    // $( document ).ready(function() {
+    //     $('#exampleModal').modal('show');
+    //
+    //     // setTimeout(function() {
+    //     //     $('#exampleModal').modal('hide');
+    //     // }, 9000);
+    // });
 
-    $( document ).ready(function() {
-        $('#exampleModal').modal('show');
+    // ---- ---- Const ---- ---- //
+    const cookiesBox = document.querySelector('.cookies-box');
+    const buttons = document.querySelectorAll('.cookies__btn');
 
-        // setTimeout(function() {
-        //     $('#exampleModal').modal('hide');
-        // }, 9000);
-    });
+// ---- ---- Show ---- ---- //
+    const executeCodes = () => {
+        if (document.cookie.includes('AlexGolovanov')) return;
+        cookiesBox.classList.add('show');
+
+        // ---- ---- Button ---- ---- //
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                cookiesBox.classList.remove('show');
+
+                // ---- ---- Time ---- ---- //
+                if (button.id == 'acceptBtn') {
+                    document.cookie =
+                        'cookieBy= AlexGolovanov; max-age=' + 60 * 60 * 24 * 30;
+                }
+            });
+        });
+    };
+
+    window.addEventListener('load', executeCodes);
 
 
 })(jQuery);

@@ -523,32 +523,10 @@ section.feature_area.inner_page {
     direction: rtl;
 }
 
-/*********** event & magazine **************/
-.block_item_event {
-    direction: rtl;
-    text-align: right;
+.cookies__btn--accept {
+    margin-right: 0;
+    margin-right: 15px;
 }
-.date_event {
-    border-right: 1px solid #ddd;
-    border-left: 0;
-}
-.desc_main_event{
-    text-align: right;
-}
-.desc_main_event ul{
-    list-style-type: disc;
-    padding: 0 20px 20px 0;
-}
-.book-item {
-    direction: rtl;
-    text-align: right;
-}
-.bk-img {
-    float: right;
-    padding-left: 30px;
-    padding-right: 0;
-}
-/*********** end event & magazine **************/
 
 @media screen and (max-width:1024px) {
 
@@ -571,6 +549,7 @@ section.feature_area.inner_page {
     .about_thumb {
         width: 100%;
     }
+
 
 
     .mc4wp-form-fields .mailchimp-form button {

@@ -7109,7 +7109,8 @@ button.close-search i {
     top: 17px;
 }
 .head_bread{
-
+    margin: 10px 0 0 0;
+    font-size: 18px;
 }
 .head_bread strong{
     font-weight: normal;
@@ -7396,7 +7397,7 @@ button.close-search i {
 
 .content-article{
     border: 1px solid #ddd;
-    padding: 30px;
+    padding: 30px 15px;
     margin: 0 0 15px 0;
     border-radius: 15px;
 }
@@ -7435,17 +7436,17 @@ button.close-search i {
     position: fixed;
     z-index: 9;
     background: #0da94b;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     left: 15px;
     bottom: 15px;
     text-align: center;
-    line-height: 50px;
+    line-height: 60px;
     border-radius: 50px;
 }
 .block_whatsapp a {
     color: #fff;
-    font-size: 22px;
+    font-size: 36px;
 }
 
 .img_sector{
@@ -8235,11 +8236,15 @@ button.close-search i {
 
 
 
+.btn_lang_home{
+    color: #0e4747;
+    font-weight: 600;
+}
 
 
-/*
- *  book List
-*/
+
+/***************** book List ******************/
+
 .toolbar {
     margin-bottom: 30px;
     border-bottom: 1px solid #d2d6d5;
@@ -8335,10 +8340,9 @@ button.close-search i {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+/***************** book List ******************/
 
-/*
- *  Book Rotate
-*/
+/***************** Book Rotate ******************/
 .bk-img {
     position: relative;
     display: inline-block;
@@ -8455,3 +8459,62 @@ button.close-search i {
     background-color: #219e9a;
     background-size: cover;
 }
+/***************** Book Rotate ******************/
+
+/************** cookies ****************/
+.cookies-box {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    background: #d3ffe6;
+    padding: 40px 100px 20px 100px;
+    margin: 0 auto;
+    color: #112d32;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px #c0baba;
+    z-index: 9999;
+    border-radius: 35px 35px 0 0;
+}
+.cookies-box.show {
+    bottom: 0;
+}
+.cookies__title {
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+}
+.cookies__text {
+    font-size: 12px;
+}
+.cookies__title,
+.cookies__text {
+    margin-bottom: 15px;
+}
+.cookies__link {
+    margin-left: 10px;
+    display: inline-block;
+    color: #8fc1e3;
+}
+.cookies__btn {
+    font-size: 16px;
+    padding: 10px 25px;
+    background-color: #faab43;
+    color: #ffffff;
+    border-radius: 25px;
+    border: none;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+.cookies__btn--accept {
+    margin-right: 15px;
+}
+.cookies__btn:hover {
+    background-color: #31708e;
+}
+.cookies__link:hover {
+    color: #31708e;
+}
+
+/************** cookies ****************/
