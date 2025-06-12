@@ -4352,6 +4352,10 @@ section.case-study-area {
         box-shadow: 0 0 0;
         background: transparent !important;
     }
+    .book-item h3 {
+        white-space: normal;
+        font-size: 16px;
+    }
     .flip-book {
         box-shadow: 0 0 0 !important;
         border-radius: 15px;

@@ -6,13 +6,18 @@ body {
     font-family: 'IBM Plex Sans Arabic';
     font-weight: normal;
     font-style: normal;
+
 }
 
+.advisar-header-area {
+    direction: rtl;
+}
 
 p ,a{
     font-family: 'IBM Plex Sans Arabic';
     font-weight: normal;
     font-style: normal;
+    direction: rtl;
 }
 
 h1,
@@ -24,6 +29,7 @@ h6 {
     font-family: 'IBM Plex Sans Arabic';
     font-weight: 600;
     font-style: normal;
+
 }
 p,h1,h2,h3,h4,h5,h6,a{
     direction: rtl;
@@ -549,7 +555,6 @@ section.feature_area.inner_page {
     .about_thumb {
         width: 100%;
     }
-
 
 
     .mc4wp-form-fields .mailchimp-form button {
